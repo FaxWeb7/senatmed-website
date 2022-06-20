@@ -1,5 +1,8 @@
 .uzi-item{
   margin-top: 5%;
+  @media(max-width: 500px){
+    margin-top: 15%;
+  }
   &__inner{
     display: flex;
     flex-direction: column;
@@ -127,6 +130,9 @@
     &-desc{
       max-width: 100%;
     }
+    &-text{
+      font-weight: 350;
+    }
     &-oss{
       align-items: center;
       gap: 25px;
@@ -143,13 +149,19 @@
     &-oss-item-text{
       text-align: center;
     }
+    &-oss-item-title{
+      text-align: center;
+      margin-bottom: 15px;
+    }
   }
   @media(max-width: 400px){
     &__inner{
       gap: 100px;
     }
+    &-oss{
+      gap: 50px;
+    }
     &-oss-item-title{
-      text-align: center;
       font-size: 23px!important;
     }
     &-slider{

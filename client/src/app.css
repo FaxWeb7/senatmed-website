@@ -1796,7 +1796,10 @@ button[type="submit"]:disabled:hover{
 }
 .uzi__item-pict{
   margin: 0 auto;
-  height: 230px;
+  height: 230px!important;
+}
+.uzi__item-img{
+  max-height: 100%;
 }
 .uzi__item-from{
   font-size: 13px;
@@ -1893,6 +1896,7 @@ button[type="submit"]:disabled:hover{
   }
   .uzi__item-from {
     text-align: center;
+    margin-top: 35px;
   }
   .uzi__item-title {
     text-align: center;

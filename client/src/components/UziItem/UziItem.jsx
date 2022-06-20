@@ -5,7 +5,7 @@ import './uziitem.scss'
 import ItemBg from "../ItemBg/ItemBg";
 
 const UziItem = ({ images, model, subtitleItem, itemDesc, oss }) => {
-  // document.title = {model};
+  document.title = `${model} | Сенатмед`;
   const settings = {
     dots: true,
     slidesToShow: 1,

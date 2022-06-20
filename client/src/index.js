@@ -30,7 +30,7 @@ root.render(
               <Route key={index} path={link} element={<CatalogItem titleItem={titleItem} description={description} imgItem={imgItem} title={title} />} exact/>
             )
           })}
-          {MainList.map(({ uzi }, index) => {
+          {MainList.map(( { uzi }, index) => {
             return(
               <>
                 {uzi.map(({ link, list }, index) => {

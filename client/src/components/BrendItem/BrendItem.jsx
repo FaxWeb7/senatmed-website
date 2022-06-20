@@ -1,6 +1,7 @@
 import ItemBg from "../ItemBg/ItemBg"
 
 const BrendItem = ({ list }) => {
+  document.title = "УЗИ-аппараты | Сенатмед"
   return (
     <>
     <ItemBg title="УЗИ-аппараты" />

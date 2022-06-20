@@ -1,5 +1,4 @@
 import phillips from '../../assets/partners/phillips.webp'
-import affinity50 from '../../assets/catalog/uzi/phillips/affinity-50.png'
 import affinity501 from '../../assets/catalog/uzi/phillips/affinity501.jfif'
 import affinity502 from '../../assets/catalog/uzi/phillips/affinity502.jfif'
 import affinity503 from '../../assets/catalog/uzi/phillips/affinity503.jfif'
@@ -9,6 +8,11 @@ import oss1 from '../../assets/catalog/uzi/phillips/oss1.webp'
 import oss2 from '../../assets/catalog/uzi/phillips/oss2.webp'
 import oss3 from '../../assets/catalog/uzi/phillips/oss3.webp'
 import oss4 from '../../assets/catalog/uzi/phillips/oss4.webp'
+import epiq71 from '../../assets/catalog/uzi/phillips/epiq71.webp'
+import epiq72 from '../../assets/catalog/uzi/phillips/epiq72.webp'
+import epiq73 from '../../assets/catalog/uzi/phillips/epiq73.webp'
+import epiq74 from '../../assets/catalog/uzi/phillips/epiq74.webp'
+import epiq75 from '../../assets/catalog/uzi/phillips/epiq75.webp'
 
 export const MainList = [
   {
@@ -19,7 +23,7 @@ export const MainList = [
         list: [
           {
             linkItem: "/catalog/uzi-apparats/phillips/affinity50",
-            img: <img class="uzi__item-img" src={affinity50} alt="senatmed сенатмед" />,
+            img: <img class="uzi__item-img" src={affinity501} alt="senatmed сенатмед" />,
             from: 'Phillips Нидерланды',
             model: 'Affinity 50',
             description: 
@@ -72,8 +76,64 @@ export const MainList = [
               }
             ]
           },
+          {
+            linkItem: "/catalog/uzi-apparats/phillips/epiq7",
+            img: <img class="uzi__item-img" src={epiq71} alt="senatmed сенатмед" />,
+            from: 'Phillips Нидерланды',
+            model: 'EPIQ 7',
+            description: 
+            <>
+              <li className="uzi__description-item">Технология nSIGHT знаменует собой новый подход к формированию ультразвуковых изображений</li>
+              <li className="uzi__description-item">Оптимизированный рабочий процесс благодаря великолепным эргономическим характеристикам</li>
+              <li className="uzi__description-item">Технология Anatomical Intelligence: от изображений к решению</li>
+              <li className="uzi__description-item">PureWave — дополнительные возможности для выполнения технически сложных исследований</li>
+            </>,
+            images: [
+              {
+                item: <img src={epiq71} alt="senatmed Сенатмед" />
+              },
+              {
+                item: <img src={epiq72} alt="senatmed Сенатмед" />
+              },
+              {
+                item: <img src={epiq73} alt="senatmed Сенатмед" />
+              },
+              {
+                item: <img src={epiq74} alt="senatmed Сенатмед" />
+              },
+              {
+                item: <img src={epiq75} alt="senatmed Сенатмед" />
+              },
+            ]
+            ,
+            subtitleItem: 'Ультразвуковая система премиального класса',
+            itemDesc: "Архитектура системы EPIQ 7 является наиболее мощной из всех систем, когда-либо применявшихся в ультразвуковой диагностике — это относится ко всем аспектам получения и обработки изображений, благодаря чему эта область диагностики выходит на новый, более совершенный уровень своего развития.",
+            oss: [
+              {
+                img: '',
+                title: 'Технология nSIGHT знаменует собой принципиально новый подход к формированию ультразвуковых изображен',
+                text: 'Фирменная архитектура Philips nSIGHT — совершенно новый подход к формированию ультразвуковых изображений, не требующий каких-либо компромиссов. В отличие от традиционных систем, в которых изображение формируется линия за линией, технология nSIGHT создает изображения с оптимальным разрешением уже на уровне пикселов. nSIGHT использует новый прецизионный формирователь луча и мощную систему параллельной обработки большого объема данных. Эта уникальная архитектура позволяет регистрировать огромный объем ультразвуковых данных, а затем создавать оптимально сфокусированные лучи, обеспечивающие высочайшее разрешение в каждой точке изображения — и все это в режиме реального времени.'
+              },
+              {
+                img: '',
+                title: 'Технология Anatomical Intelligence: от изображений к решению',
+                text: 'Благодаря архитектуре EPIQ 7 уникальная разработка компании Philips, технология Anatomical Intelligence Ultrasound (AIUS), превращает ультразвуковой аппарат в активную адаптирующуюся систему. Использование специализированных средств моделирования органов (с помощью технологии xMATRIX) и количественного анализа позволило упростить проведение исследований, повысить их воспроизводимость и достичь нового уровня клинической информативности. Технология AIUS охватывает множество сфер от автоматизации повторяющихся действий до полностью автоматизированного анализа с минимальным вмешательством врача, позволяя получать необходимые результаты.'
+              },
+              {
+                img: '',
+                title: 'Оптимизированный рабочий процесс благодаря великолепным эргономическим характеристикам и потрясающей',
+                text: 'Система EPIQ 7 полностью изменяет методы работы врачей, позволяя им получать ультразвуковые изображения великолепного качества. Простота использования, оптимальный рабочий процесс, эргономичность и маневренность. Мы полностью изменили способ взаимодействия с ультразвуковой системой, сохранив удобство управления и бесшумность работы.'
+              },
+              {
+                img: '',
+                title: 'PureWave — дополнительные возможности для выполнения технически сложных исследований',
+                text: 'Технология PureWave стала самым большим прорывом в создании пьезоэлектрических датчиков за последние 40 лет. Чистые, однородные кристаллы PureWave на 85% эффективнее обычных пьезоэлектрических материалов и благодаря этому обладают уникальными рабочими характеристиками. Эта технология обеспечивает повышенную глубину проникновения при исследовании технически сложных пациентов и позволяет достичь превосходного пространственного разрешения.'
+              }
+            ]
+          },
         ]
       },
+      
     ]
   }
 ]
