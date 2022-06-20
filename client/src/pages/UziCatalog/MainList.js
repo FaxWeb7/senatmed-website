@@ -52,6 +52,43 @@ import r50Linear from '../../assets/catalog/uzi/scan/r50-linear.jpg'
 import r50er from '../../assets/catalog/uzi/scan/r50-er.jpg'
 import r50ph from '../../assets/catalog/uzi/scan/r50-ph.jpg'
 import r503d from '../../assets/catalog/uzi/scan/r50-3d.jpg'
+import ruscan601 from '../../assets/catalog/uzi/scan/ruscan601.jpg'
+import ruscan602 from '../../assets/catalog/uzi/scan/ruscan602.jpg'
+import ruscan603 from '../../assets/catalog/uzi/scan/ruscan603.jpg'
+import r60Convex from '../../assets/catalog/uzi/scan/r60Convex.jpg'
+import r60Linear from '../../assets/catalog/uzi/scan/r60-linear.jpg'
+import r60er from '../../assets/catalog/uzi/scan/r60-er.jpg'
+import r60ph from '../../assets/catalog/uzi/scan/r60-ph.jpg'
+import r603d from '../../assets/catalog/uzi/scan/r60-3d.jpg'
+import r603i from '../../assets/catalog/uzi/scan/r60-intra.jpg'
+import r603dop from '../../assets/catalog/uzi/scan/r60-doppler.jpg'
+import ruscan651 from '../../assets/catalog/uzi/scan/ruscan601.jpg'
+import ruscan652 from '../../assets/catalog/uzi/scan/ruscan602.jpg'
+import ruscan653 from '../../assets/catalog/uzi/scan/ruscan603.jpg'
+import r65Convex from '../../assets/catalog/uzi/scan/r65-convex.jpg'
+import r65Linear from '../../assets/catalog/uzi/scan/r65-linear.jpg'
+import r65er from '../../assets/catalog/uzi/scan/r65-er.jpg'
+import r65ph from '../../assets/catalog/uzi/scan/r65-ph.jpg'
+import r653d from '../../assets/catalog/uzi/scan/r65-3d.jpg'
+import r65tr from '../../assets/catalog/uzi/scan/r65-tr.jpg'
+import r65dop from '../../assets/catalog/uzi/scan/r65-doppler.jpg'
+import ruscan65m1 from '../../assets/catalog/uzi/scan/ruscan65m1.jpg'
+import ruscan65m2 from '../../assets/catalog/uzi/scan/ruscan65m2.jpg'
+import ruscan65m3 from '../../assets/catalog/uzi/scan/ruscan65m3.jpg'
+import r65mi from '../../assets/catalog/uzi/scan/r65mi.jpg'
+import r65m3d from '../../assets/catalog/uzi/scan/r65m3d.jpg'
+import r65mdop from '../../assets/catalog/uzi/scan/r65m-doppler.jpg'
+import ruscan70p1 from '../../assets/catalog/uzi/scan/ruscan70p1.jpg'
+import ruscan70p2 from '../../assets/catalog/uzi/scan/ruscan70p2.jpg'
+import r70pConvex from '../../assets/catalog/uzi/scan/r70-convex.jpg'
+import r70pLinear from '../../assets/catalog/uzi/scan/r70-linear.jpg'
+import r70per from '../../assets/catalog/uzi/scan/r70-er.jpg'
+import r70pph from '../../assets/catalog/uzi/scan/r70-ph.jpg'
+import r70p3d from '../../assets/catalog/uzi/scan/r70-3d.jpg'
+import r70ptr from '../../assets/catalog/uzi/scan/r70-tr.jpg'
+import r70pi from '../../assets/catalog/uzi/scan/r70-intra.jpg'
+import r70pdop from '../../assets/catalog/uzi/scan/r70-doppler.jpg'
+
 
 export const MainList = [
   {
@@ -494,7 +531,273 @@ export const MainList = [
               },
             ]
           },
-          
+          {
+            linkItem: "/catalog/uzi-apparats/ru-scan/ruscan60",
+            img: <img class="uzi__item-img" src={ruscan601} alt="senatmed сенатмед" />,
+            from: 'РуСкан',
+            model: 'УЗИ аппарат РуСкан 60',
+            description: 
+            <>
+              <li className="uzi__description-item">Широкоформатный светодиодный LED монитор высокого разрешения с диагональю 21,5".</li>
+              <li className="uzi__description-item">Сенсорная панель управления.</li>
+              <li className="uzi__description-item">Фильтры обработки изображения для уменьшения зернистости и повышения четкости в базовой комплектации.</li>
+              <li className="uzi__description-item">3D реконструкция двумерными датчиками и автоматическая фетометрия в базовой комплектации.</li>
+              <li className="uzi__description-item">Датчики высокой плотности.</li>
+            </>,
+            images: [
+              {
+                item: <img src={ruscan601} alt="senatmed Сенатмед" />
+              },
+              {
+                item: <img src={ruscan602} alt="senatmed Сенатмед" />
+              },
+              {
+                item: <img src={ruscan603} alt="senatmed Сенатмед" />
+              },
+            ]
+            ,
+            subtitleItem: 'Ультразвуковой аппарат высокого/экспертного  класса',
+            itemDesc: "РуСкан 60 — система ультразвуковой визуализации универсальная (код ОКПД2 26.60.12.132) с высокой разрешающей способностью, передовыми технологиями визуализации и пост-обработки изображения. Оценка эластичности тканей, расширенные возможности 3D/4D/5D сканирования, набор опций для экспертных кардиологических исследований, в том числе модуль полуавтоматической оценки сократимости миокарда левого желудочка сердца, позволяют рекомендовать применение аппарата РуСкан-60 в диагностических центрах, многопрофильных и специализированных медицинских учреждениях, медицинских исследовательских институтах.",
+            slider: [
+              {
+                img: <img className="slider2-img" src={r60Convex} alt="senatmed сенатмед" />,
+                title: 'Конвексные датчики',
+                text: 'Акушерские исследования (плод, сердце плода), гинекология (матка, яичники), абдоминальные исследования (печень, желчный пузырь, поджелудочная железа, селезенка, глубокие сосуды), почки.',
+              },
+              {
+                img: <img className="slider2-img" src={r60Linear} alt="senatmed сенатмед" />,
+                title: 'Линейные датчики',
+                text: 'Поверхностные структуры (щитовидная железа, молочная железа, лимфоузлы), мускулоскелетные исследования (суставы, мышцы, подкожные структуры), периферические сосуды.',
+              },
+              {
+                img: <img className="slider2-img" src={r60er} alt="senatmed сенатмед" />,
+                title: 'Внутриполостные датчики',
+                text: 'Акушерские исследования (ранние сроки), гинекология (матка, яичники), урология (предстательная железа), исследования прямой кишки.',
+              },
+              {
+                img: <img className="slider2-img" src={r60ph} alt="senatmed сенатмед" />,
+                title: 'Секторные датчики',
+                text: 'Кардиология и транскраниальные исследования у взрослых.',
+              },
+              {
+                img: <img className="slider2-img" src={r603d} alt="senatmed сенатмед" />,
+                title: 'Объемные конвексные датчики',
+                text: 'Трехмерные абдоминальные исследования, акушерство (трехмерное УЗИ плода) и гинекология.',
+              },
+              {
+                img: <img className="slider2-img" src={r603i} alt="senatmed сенатмед" />,
+                title: 'Датчики интраоперационные',
+                text: 'Интраоперационные исследования, скелетно-мышечная система (суставы, мышцы, подкожные структуры), периферические сосуды.',
+              },
+              {
+                img: <img className="slider2-img" src={r603dop} alt="senatmed сенатмед" />,
+                title: 'Датчики допплеровские',
+                text: 'Транскраниальные исследования, сосуды',
+              },
+            ]
+          },
+          {
+            linkItem: "/catalog/uzi-apparats/ru-scan/ruscan65",
+            img: <img class="uzi__item-img" src={ruscan651} alt="senatmed сенатмед" />,
+            from: 'РуСкан',
+            model: 'УЗИ аппарат РуСкан 65',
+            description: 
+            <>
+              <li className="uzi__description-item">Широкоформатный светодиодный LED монитор высокого разрешения с диагональю 21,5”.</li>
+              <li className="uzi__description-item">5 портов для подключения датчиков (в т.ч. порт для CW датчика).</li>
+              <li className="uzi__description-item">Сенсорная панель управления.</li>
+              <li className="uzi__description-item">Монокристальные датчики для исследований в расширенном диапазоне частот.</li>
+              <li className="uzi__description-item">Новейшие технологии визуализации и обработки изображения: Crystal Vue, 5D Heart Color, S-Detect Breast, Strain+.</li>
+            </>,
+            images: [
+              {
+                item: <img src={ruscan651} alt="senatmed Сенатмед" />
+              },
+              {
+                item: <img src={ruscan652} alt="senatmed Сенатмед" />
+              },
+              {
+                item: <img src={ruscan653} alt="senatmed Сенатмед" />
+              },
+            ]
+            ,
+            subtitleItem: 'Ультразвуковой аппарат экспертного класса',
+            itemDesc: "РуСкан 65 — ультразвуковой аппарат с сенсорной панелью управления, экспертным качеством визуализации и новейшими технологиями обработки изображения. Система ультразвуковой визуализации РуСкан-65 успешно применяется для проведения высокоточной диагностики в самых разных сферах — от акушерства до педиатрии, от онкологии до интраоперационных исследований, от травматологии до эхокардиографии благодаря наличию специализированных программ и расширенных возможностей визуализации в различных режимах, включая объемную визуализацию движущихся структур в реальном масштабе времени.",
+            slider: [
+              {
+                img: <img className="slider2-img" src={r65Convex} alt="senatmed сенатмед" />,
+                title: 'Конвексные датчики',
+                text: 'Абдоминальные исследования (печень, желчный пузырь, поджелудочная железа, селезенка, глубоко расположенные сосуды), акушерские исследования (плод, сердце плода), гинекология (матка, яичники).',
+              },
+              {
+                img: <img className="slider2-img" src={r65Linear} alt="senatmed сенатмед" />,
+                title: 'Линейные датчики',
+                text: 'Щитовидная железа, молочная железа, лимфоузлы, периферические сосуды, скелетно-мышечная система (суставы, мышцы, подкожные структуры).',
+              },
+              {
+                img: <img className="slider2-img" src={r65er} alt="senatmed сенатмед" />,
+                title: 'Внутриполостные датчики',
+                text: 'Акушерство (ранние сроки), гинекология (матка, яичники), урология (предстательная железа).',
+              },
+              {
+                img: <img className="slider2-img" src={r65ph} alt="senatmed сенатмед" />,
+                title: 'Фазированные датчики',
+                text: 'Кардиология (взрослые, дети, новорожденные), транскраниальные и абдоминальные исследования.',
+              },
+              {
+                img: <img className="slider2-img" src={r653d} alt="senatmed сенатмед" />,
+                title: 'Объемные датчики',
+                text: 'Абдоминальные исследования (печень, желчный пузырь, поджелудочная железа, селезенка, глубоко расположенные сосуды), акушерские исследования (плод, сердце плода), гинекология (матка, яичники).',
+              },
+              {
+                img: <img className="slider2-img" src={r65tr} alt="senatmed сенатмед" />,
+                title: 'Чреспищеводные датчики',
+                text: 'Чреспищеводная эхокардиография.',
+              },
+              {
+                img: <img className="slider2-img" src={r65dop} alt="senatmed сенатмед" />,
+                title: 'Датчики допплеровские',
+                text: 'Транскраниальные исследования, сосуды',
+              },
+            ]
+          },
+          {
+            linkItem: "/catalog/uzi-apparats/ru-scan/ruscan65m",
+            img: <img class="uzi__item-img" src={ruscan65m1} alt="senatmed сенатмед" />,
+            from: 'РуСкан',
+            model: 'УЗИ аппарат РуСкан 65М',
+            description: 
+            <>
+              <li className="uzi__description-item">Многофункциональный УЗ сканер класса "Экспертный +".</li>
+              <li className="uzi__description-item">5 портов для подключения датчиков (в т.ч. порт для CW датчика).</li>
+              <li className="uzi__description-item">Специализированные программы и расширенные возможности визуализации в различных режимах сканирования.</li>
+              <li className="uzi__description-item">В исследовании применяются монокристальные датчики для более точной визуализации.</li>
+              <li className="uzi__description-item">Новейшие технологии визуализации и обработки изображения: Crystal Vue, 5D Heart Color, S-Detect Breast, Strain+.</li>
+            </>,
+            images: [
+              {
+                item: <img src={ruscan65m1} alt="senatmed Сенатмед" />
+              },
+              {
+                item: <img src={ruscan65m2} alt="senatmed Сенатмед" />
+              },
+              {
+                item: <img src={ruscan65m3} alt="senatmed Сенатмед" />
+              },
+            ]
+            ,
+            subtitleItem: 'Ультразвуковой аппарат класса Экспертный+',
+            itemDesc: "РуСкан 65М — ультразвуковой аппарат с сенсорной панелью управления, экспертным качеством визуализации и новейшими технологиями обработки изображения. Система ультразвуковой визуализации РуСкан-65М  успешно применяется для проведения высокоточной диагностики в самых разных сферах — от акушерства до педиатрии, от онкологии до интраоперационных исследований, от травматологии до эхокардиографии благодаря наличию специализированных программ и расширенных возможностей визуализации в различных режимах, включая объемную визуализацию движущихся структур в реальном масштабе времени.",
+            slider: [
+              {
+                img: <img className="slider2-img" src={r65Convex} alt="senatmed сенатмед" />,
+                title: 'Конвексные датчики',
+                text: 'Абдоминальные исследования (печень, желчный пузырь, поджелудочная железа, селезенка, глубоко расположенные сосуды), акушерские исследования (плод, сердце плода), гинекология (матка, яичники).',
+              },
+              {
+                img: <img className="slider2-img" src={r65Linear} alt="senatmed сенатмед" />,
+                title: 'Линейные датчики',
+                text: 'Щитовидная железа, молочная железа, лимфоузлы, периферические сосуды, скелетно-мышечная система (суставы, мышцы, подкожные структуры).',
+              },
+              {
+                img: <img className="slider2-img" src={r65er} alt="senatmed сенатмед" />,
+                title: 'Внутриполостные датчики',
+                text: 'Акушерство (ранние сроки), гинекология (матка, яичники), урология (предстательная железа).',
+              },
+              {
+                img: <img className="slider2-img" src={r65ph} alt="senatmed сенатмед" />,
+                title: 'Фазированные датчики',
+                text: 'Кардиология (взрослые, дети, новорожденные), транскраниальные и абдоминальные исследования.',
+              },
+              {
+                img: <img className="slider2-img" src={r65mi} alt="senatmed сенатмед" />,
+                title: 'Интраоперационные датчики',
+                text: 'Скелетно-мышечная система (суставы, мышцы, подкожные структуры), интраоперационные исследования.',
+              },
+              {
+                img: <img className="slider2-img" src={r65m3d} alt="senatmed сенатмед" />,
+                title: 'Объемные датчики',
+                text: 'Трехмерные исследования в акушерстве (ранние сроки), гинекологии (матка, яичники), урологии (предстательная железа).',
+              },
+              {
+                img: <img className="slider2-img" src={r65tr} alt="senatmed сенатмед" />,
+                title: 'Чреспищеводные датчики',
+                text: 'Чреспищеводная эхокардиография.',
+              },
+              {
+                img: <img className="slider2-img" src={r65mdop} alt="senatmed сенатмед" />,
+                title: 'Датчики допплеровские',
+                text: 'Транскраниальные исследования, сосуды',
+              },
+            ]
+          },
+          {
+            linkItem: "/catalog/uzi-apparats/ru-scan/ruscan70p",
+            img: <img class="uzi__item-img" src={ruscan70p1} alt="senatmed сенатмед" />,
+            from: 'РуСкан',
+            model: 'УЗИ аппарат РуСкан 70П',
+            description: 
+            <>
+              <li className="uzi__description-item">Портативный УЗ сканер экспертного класса.</li>
+              <li className="uzi__description-item">Компактный дизайн расширяет возможности диагностики.</li>
+              <li className="uzi__description-item">Новейшие технологии визуализации позволяют получать превосходное изображение.</li>
+              <li className="uzi__description-item">15” жидкокристаллический монитор со светодиодной подсветкой.</li>
+              <li className="uzi__description-item">Дополнительно поставляемый аккумулятор с увеличенной емкостью рассчитан на три часа работы при максимальном заряде.</li>
+            </>,
+            images: [
+              {
+                item: <img src={ruscan70p1} alt="senatmed Сенатмед" />
+              },
+              {
+                item: <img src={ruscan70p2} alt="senatmed Сенатмед" />
+              },
+            ]
+            ,
+            subtitleItem: 'Ультразвуковой аппарат экспертного класса',
+            itemDesc: "РуСкан 70П — портативный ультразвуковой аппарат экспертного класса (выполнен в форме ноутбука), идеальное решение для врача, желающего применить передовой опыт клинической практики и позаботиться о пациенте в любом месте, где необходимо проведение ультразвукового исследования. Превосходное качество изображения и простые в использовании функции сканера помогают провести диагностические и инвазивные процедуры под контролем УЗИ точно и быстро.   ",
+            slider: [
+              {
+                img: <img className="slider2-img" src={r70pConvex} alt="senatmed сенатмед" />,
+                title: 'Конвексные датчики',
+                text: 'Акушерские исследования (плод, сердце плода), гинекология (матка, яичники), абдоминальные исследования (печень, желчный пузырь, поджелудочная железа, селезенка, глубоко расположенные сосуды).',
+              },
+              {
+                img: <img className="slider2-img" src={r70pLinear} alt="senatmed сенатмед" />,
+                title: 'Линейные датчики',
+                text: 'Поверхностно расположенные органы (щитовидная железа, молочная железа, лимфоузлы), абдоминальные исследования (печень, желчный пузырь, поджелудочная железа, селезенка, глубоко расположенные сосуды), скелетно-мышечная система (суставы, мышцы, подкожные структуры).',
+              },
+              {
+                img: <img className="slider2-img" src={r70per} alt="senatmed сенатмед" />,
+                title: 'Внутриполостные датчики',
+                text: 'Акушерские исследования (ранние сроки), гинекология (матка, яичники), урология (предстательная железа), исследования прямой кишки.',
+              },
+              {
+                img: <img className="slider2-img" src={r70pph} alt="senatmed сенатмед" />,
+                title: 'Фазированные датчики',
+                text: 'Кардиология (взрослые, дети, новорожденные), транскраниальные исследования у взрослых, абдоминальные исследования.',
+              },
+              {
+                img: <img className="slider2-img" src={r70p3d} alt="senatmed сенатмед" />,
+                title: 'Объемные датчики',
+                text: 'Трехмерные абдоминальные исследования, акушерство (трехмерное УЗИ плода) и гинекология.',
+              },
+              {
+                img: <img className="slider2-img" src={r70ptr} alt="senatmed сенатмед" />,
+                title: 'Чреспищеводные датчики',
+                text: 'Чреспищеводная эхокардиография.',
+              },
+              {
+                img: <img className="slider2-img" src={r70pi} alt="senatmed сенатмед" />,
+                title: 'Датчики интраоперационные',
+                text: 'Интраоперационные исследования, скелетно-мышечная система (суставы, мышцы, подкожные структуры), периферические сосуды.',
+              },
+              {
+                img: <img className="slider2-img" src={r70pdop} alt="senatmed сенатмед" />,
+                title: 'Датчики допплеровские',
+                text: 'Допплерография у взрослых и детей.',
+              },
+            ]
+          },
         ]
       },
     ]
