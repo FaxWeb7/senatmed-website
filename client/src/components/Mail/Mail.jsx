@@ -3,7 +3,7 @@ import { useForm } from 'react-hook-form'
 
 const Mail = () => {
   const {isChecked, setIsChecked} = useState(true)
-  const { register, formState: { errors, isValid },  handleSubmit, reset } = useForm({mode: "onBlur"});
+  const { register, formState: { errors, /*isValid*/ },  handleSubmit, reset } = useForm({mode: "onBlur"});
 
   const onSubmit = ({name, email, mess, phone}) => {
     var dataToSend = {message: `Имя: ${name}\nЭл.почта: ${email}\nТелефон: ${phone}\nСообщение: ${mess}`};
@@ -96,7 +96,7 @@ const Mail = () => {
                 />
                 <label className="mail__form-label" htmlFor="suggest">даю согласие на обработку моих персональных данных</label>
                 {errors?.checkbox && <p className='form-err-text'>{errors?.checkbox?.message}</p>}
-                <button className="mail__form-btn btn-error" type="submit" disabled={!isValid}>отправить</button>
+                <button className="mail__form-btn btn-error" type="submit" /*disabled={!isValid}*/>отправить</button>
               </form>
             </div>
           </div>

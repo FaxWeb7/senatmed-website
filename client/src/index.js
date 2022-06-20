@@ -36,9 +36,9 @@ root.render(
                 {uzi.map(({ link, list }, index) => {
                   return(
                     <>
-                      {list.map(({ linkItem, images, model, subtitleItem, itemDesc, oss }, index) => {
+                      {list.map(({ linkItem, images, model, subtitleItem, itemDesc, oss, slider }, index) => {
                         return(
-                          <Route key={index} path={linkItem} element={<UziItem images={images} model={model} subtitleItem={subtitleItem} itemDesc={itemDesc} oss={oss}/>} exact/>
+                          <Route key={index} path={linkItem} element={<UziItem images={images} model={model} subtitleItem={subtitleItem} itemDesc={itemDesc} oss={oss} slider={slider}/>} exact/>
                         )
                       })}
                       <Route key={index} path={link} element={<BrendItem list={list} />} exact/>

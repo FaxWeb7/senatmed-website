@@ -99,6 +99,99 @@
       }
     }
   }
+  .uzi-item-slider2{
+    width: 100%;
+    margin-top: -100px;
+    .slider2-item{
+      display: flex!important;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      gap: 8px;
+      &:active{
+        cursor: grabbing;
+      }
+    }
+    .slider2-img{
+      align-self: center;
+    }
+    .slider2-title{
+      font-size: 16px!important;
+      font-weight: 700;
+    }
+    .slider2-text{
+      font-size: 16px!important;
+      font-weight: 500;
+      max-width: 90%;
+    }
+    .slick-arrow.slick-prev{
+      left: -30px;
+      z-index: 1;
+      width: 30px;
+      height: 35px;
+      // transition: all 0.3s ease;
+      background: url('../../assets/catalog/uzi/scan/arrowLeft.svg') 0 0 / 100% no-repeat;
+      &:hover{
+        background: url('../../assets/catalog/uzi/scan/arrowLeftHover.svg') 0 0 / 100% no-repeat;
+      }
+      &::before{
+        content: '';
+      }
+    }
+    .slick-arrow.slick-next{
+      right: -30px;
+      z-index: 1;
+      width: 30px;
+      height: 35px;
+      // transition: all 0.3s ease;
+      background: url('../../assets/catalog/uzi/scan/arrowRight.svg') 0 0 / 100% no-repeat;
+      &:hover{
+        background: url('../../assets/catalog/uzi/scan/arrowRightHover.svg') 0 0 / 100% no-repeat;
+      }
+      &::before{
+        content: '';
+      }
+    }
+  }
+  .slider2-wrapper{
+    margin-top: -70px;  
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 20px;
+    .slider-titlee{
+      font-size: 20px;
+    }
+    .slider-textt{
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 23px;
+    }
+  }
+  @media(max-width: 1023px){
+    .slick-arrow.slick-prev{
+      left: -20px!important;
+    }
+    .slick-arrow.slick-next{
+      right: -20px!important;
+    }
+  }
+  @media(max-width: 1023px){
+    .slick-arrow.slick-prev{
+      left: -10px!important;
+    }
+    .slick-arrow.slick-next{
+      right: -10px!important;
+    }
+    .slider2-wrapper{
+      align-items: center;
+    }
+    .slider-textt{
+      text-align: center;
+    }
+  }
+
   @media(max-width: 969px){
     &__inner{
       gap: 130px;
@@ -118,6 +211,12 @@
     }
     &-oss{
       align-items: center;
+    }
+    .slider-textt{
+      font-weight: 400!important;
+    }
+    .slider2-text{
+      font-weight: 400!important;
     }
   }
   @media(max-width: 767px){
@@ -153,6 +252,7 @@
       text-align: center;
       margin-bottom: 15px;
     }
+    
   }
   @media(max-width: 400px){
     &__inner{
