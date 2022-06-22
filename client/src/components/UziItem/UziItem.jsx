@@ -7,6 +7,7 @@ const UziItem = ({ images, model, subtitleItem, itemDesc, oss, slider }) => {
   document.title = `${model} | Сенатмед`;
   const settings = {
     dots: true,
+    arrows: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 750,

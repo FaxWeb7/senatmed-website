@@ -2,7 +2,7 @@ import ItemBg from "../ItemBg/ItemBg"
 import './npocatalog.scss'
 
 const NpoCatalog = ({ list, title }) => {
-  document.title = 'Мобильные комплексы НПА "АВТОМЕДКОМПЛЕКС" | Сенатмед'
+  document.title = `Мобильные кабинеты ${title} | Сенатмед`
   return (
     <>
     <ItemBg title={title} />
@@ -15,7 +15,9 @@ const NpoCatalog = ({ list, title }) => {
                 <li className="uzi__list-item mobile" key={index}>
                   <a href={linkItem} className="uzi__item-pict mobile">{img}</a>
                   <h2 className="uzi__item-title mobile">{model}</h2>
-                  <button id="order-btn" className="uzi__order-btn mobile"><a href={linkItem} className="uzi__item-link">Подробнее</a></button>
+                  <button id="order-btn" className="uzi__order-btn mobile">
+                    <a href={linkItem} className="uzi__item-link">Подробнее</a>
+                  </button>
                 </li>
               )
             })}

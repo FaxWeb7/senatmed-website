@@ -13,9 +13,12 @@ import Privacy from './components/Privacy/Privacy'
 import { MainList } from './pages/UziCatalog/MainList';
 import BrendItem from './components/BrendItem/BrendItem';
 import UziItem from './components/UziItem/UziItem';
-import RenCatalog from './pages/MobileCatalog/MobileCatalog';
+import MobileCatalog from './pages/MobileCatalog/MobileCatalog';
 import NpoCatalog from './components/NpoCatalog/NpoCatalog';
 import NpoItem from './components/NpoItem/NpoItem';
+import RenCatalog from './pages/RenCatalog/RenCatalog';
+import GelCatalog from './pages/RenCatalog/GelCatalog';
+import GelItem from './pages/RenCatalog/GelItem';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -28,13 +31,14 @@ root.render(
           <Route path="/privacy-policy" element={<Privacy />} exact/>
           <Route path="/catalog" element={<Catalog />} exact/>
           <Route path="/catalog/uzi-apparats" element={<UziCatalog />} exact/>
-          <Route path="/catalog/mobile-complex" element={<RenCatalog />} exact/>
+          <Route path="/catalog/mobile-complex" element={<MobileCatalog />} exact/>
+          <Route path="/catalog/rentgenologiya" element={<RenCatalog />} exact/>
           {CtgList.map(({link, title, titleItem, imgItem, description}, index) => {
             return(
               <Route key={index} path={link} element={<CatalogItem titleItem={titleItem} description={description} imgItem={imgItem} title={title} />} exact/>
             )
           })}
-          {MainList.map(( { uzi, mobile }, index) => {
+          {MainList.map(( { uzi, mobile, rent }, index) => {
             return(
               <>
                 {uzi.map(({ link, list }, index) => {
@@ -58,6 +62,18 @@ root.render(
                         )
                       })}
                       <Route key={index} path={link} element={<NpoCatalog list={list} title={antitle} />} exact/>
+                    </>
+                  )
+                })}
+                {rent.map(({ link, list, antitle }, index) => {
+                  return(
+                    <>
+                      {list.map(({ linkItem, images, model, itemDesc, pre, tech }, index) => {
+                        return(
+                          <Route key={index} path={linkItem} element={<GelItem model={model} images={images} description={itemDesc} pre={pre} tech={tech}  />} exact/>
+                        )
+                      })}
+                      <Route key={index} path={link} element={<GelCatalog list={list} title={antitle} />} exact/>
                     </>
                   )
                 })}

@@ -1,8 +1,9 @@
 import Logo from '../../assets/icons/senatmed-logo.webp';
+import{ Link } from 'react-router-dom'
 
 const Header = () => {
   return (
-    <header className="header-wrapper">
+    <header className="header-wrapper" id="header">
       <div className="header__top">
         <div className="container">
           <div className="header__top-inner">

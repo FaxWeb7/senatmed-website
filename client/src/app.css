@@ -2181,6 +2181,20 @@ h2 {
 .uzi .uzi__item-img.mobile{
   border-radius: 15px;
 }
+.top-ctg__title {
+  z-index: 10;
+}
+.header-wrapper{
+  z-index: 11;
+}
+.uzi__item-title{
+  text-align: center;
+}
+@media (max-width: 705px){
+  .uzi__item-pict {
+    margin-bottom: -10px!important;
+  }
+}
 @media(max-width: 886px){
   .catalog__item-img{
     height: 160px;
