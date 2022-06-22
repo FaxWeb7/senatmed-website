@@ -1,5 +1,4 @@
 import Logo from '../../assets/icons/senatmed-logo.webp';
-import{ Link } from 'react-router-dom'
 
 const Header = () => {
   return (
