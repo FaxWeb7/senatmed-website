@@ -13,6 +13,9 @@ import Privacy from './components/Privacy/Privacy'
 import { MainList } from './pages/UziCatalog/MainList';
 import BrendItem from './components/BrendItem/BrendItem';
 import UziItem from './components/UziItem/UziItem';
+import RenCatalog from './pages/MobileCatalog/MobileCatalog';
+import NpoCatalog from './components/NpoCatalog/NpoCatalog';
+import NpoItem from './components/NpoItem/NpoItem';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -25,12 +28,13 @@ root.render(
           <Route path="/privacy-policy" element={<Privacy />} exact/>
           <Route path="/catalog" element={<Catalog />} exact/>
           <Route path="/catalog/uzi-apparats" element={<UziCatalog />} exact/>
+          <Route path="/catalog/mobile-complex" element={<RenCatalog />} exact/>
           {CtgList.map(({link, title, titleItem, imgItem, description}, index) => {
             return(
               <Route key={index} path={link} element={<CatalogItem titleItem={titleItem} description={description} imgItem={imgItem} title={title} />} exact/>
             )
           })}
-          {MainList.map(( { uzi }, index) => {
+          {MainList.map(( { uzi, mobile }, index) => {
             return(
               <>
                 {uzi.map(({ link, list }, index) => {
@@ -42,6 +46,18 @@ root.render(
                         )
                       })}
                       <Route key={index} path={link} element={<BrendItem list={list} />} exact/>
+                    </>
+                  )
+                })}
+                {mobile.map(({ link, list, antitle }, index) => {
+                  return(
+                    <>
+                      {list.map(({ linkItem, model, imgItem, description, ob, gallery, subtitle }, index) => {
+                        return(
+                          <Route key={index} path={linkItem} element={<NpoItem model={model} img={imgItem}description={description} ob={ob} gallery={gallery} />} exact/>
+                        )
+                      })}
+                      <Route key={index} path={link} element={<NpoCatalog list={list} title={antitle} />} exact/>
                     </>
                   )
                 })}

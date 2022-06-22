@@ -1,0 +1,10 @@
+.catalog__list {
+  &.mobile{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @media(max-width: 767px){
+      flex-direction: column;
+    }
+  }
+}

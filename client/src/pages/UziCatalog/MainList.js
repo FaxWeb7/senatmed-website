@@ -88,6 +88,52 @@ import r70p3d from '../../assets/catalog/uzi/scan/r70-3d.jpg'
 import r70ptr from '../../assets/catalog/uzi/scan/r70-tr.jpg'
 import r70pi from '../../assets/catalog/uzi/scan/r70-intra.jpg'
 import r70pdop from '../../assets/catalog/uzi/scan/r70-doppler.jpg'
+import npoLogo from '../../assets/catalog/mobile/npo/npo-logo.png'
+import npoFlue from '../../assets/catalog/mobile/npo/flue.jpg'
+import obImg from "../../assets/catalog/mobile/npo/ob.jpg";
+import gal1 from "../../assets/catalog/mobile/npo/gal1.jpg";
+import gal2 from "../../assets/catalog/mobile/npo/gal2.jfif";
+import gal3 from "../../assets/catalog/mobile/npo/gal3.jpg";
+import gal4 from "../../assets/catalog/mobile/npo/gal4.jfif";
+import gal5 from "../../assets/catalog/mobile/npo/gal5.jpg";
+import gal6 from "../../assets/catalog/mobile/npo/gal6.jfif";
+import gal7 from "../../assets/catalog/mobile/npo/gal7.jfif";
+import npoMamm from "../../assets/catalog/mobile/npo/mamm.jpg";
+import gal8 from "../../assets/catalog/mobile/npo/gal8.jpg";
+import gal9 from "../../assets/catalog/mobile/npo/gal9.jpg";
+import gal10 from "../../assets/catalog/mobile/npo/gal10.jpg";
+import gal11 from "../../assets/catalog/mobile/npo/gal11.jpg";
+import gal12 from "../../assets/catalog/mobile/npo/gal12.jfif";
+import gal13 from "../../assets/catalog/mobile/npo/gal13.jfif";
+import gal14 from "../../assets/catalog/mobile/npo/gal14.jfif";
+import gal15 from "../../assets/catalog/mobile/npo/gal15.jfif";
+import gal16 from "../../assets/catalog/mobile/npo/gal16.jfif";
+import gal17 from "../../assets/catalog/mobile/npo/gal17.jpg";
+import gal18 from "../../assets/catalog/mobile/npo/gal18.jfif";
+import gal19 from "../../assets/catalog/mobile/npo/gal19.jfif";
+import ob1 from "../../assets/catalog/mobile/npo/ob1.jpg";
+import ob2 from "../../assets/catalog/mobile/npo/ob2.jpg";
+import urLogo from "../../assets/catalog/mobile/ur/ur.webp";
+import urFlue from "../../assets/catalog/mobile/ur/urflur.jpg";
+import gal20 from "../../assets/catalog/mobile/ur/gal20.jpg";
+import gal21 from "../../assets/catalog/mobile/ur/gal21.jpg";
+import gal22 from "../../assets/catalog/mobile/ur/gal22.jpg";
+import gal23 from "../../assets/catalog/mobile/ur/gal23.jpg";
+import gal24 from "../../assets/catalog/mobile/ur/gal24.jpg";
+import gal25 from "../../assets/catalog/mobile/ur/gal25.png";
+import gal26 from "../../assets/catalog/mobile/ur/gal26.png";
+import gal27 from "../../assets/catalog/mobile/ur/gal27.png";
+import gal28 from "../../assets/catalog/mobile/ur/gal28.png";
+import urMamm from "../../assets/catalog/mobile/ur/urmamm.png";
+import gal29 from "../../assets/catalog/mobile/ur/gal29.png";
+import gal30 from "../../assets/catalog/mobile/ur/gal30.png";
+import gal31 from "../../assets/catalog/mobile/ur/gal31.png";
+import gal32 from "../../assets/catalog/mobile/ur/gal32.jpg";
+import gal33 from "../../assets/catalog/mobile/ur/gal33.jpg";
+import gal34 from "../../assets/catalog/mobile/ur/gal34.jpg";
+import gal35 from "../../assets/catalog/mobile/ur/gal35.jpg";
+import gal36 from "../../assets/catalog/mobile/ur/gal36.jpg";
+
 
 
 export const MainList = [
@@ -800,6 +846,250 @@ export const MainList = [
           },
         ]
       },
+    ],
+    mobile: [
+      {
+        link: "/catalog/mobile-complex/npoauto",
+        img: <img className="catalog__item-img" src={npoLogo} alt="сенатмед senatmed" />,
+        antitle: 'НПА "АВТОМЕДКОМПЛЕКС"',
+        list: [
+          {
+            linkItem: "/catalog/mobile-complex/npoauto/npo-fluerograph",
+            img: <img class="uzi__item-img mobile" src={npoFlue} alt="senatmed сенатмед" />,
+            imgItem: <img class="npoitem__img" src={npoFlue} alt="senatmed сенатмед" />,
+            model: 'Передвижной флюорограф',
+            description: 
+            <>
+                Передвижные медицинские комплексы «Передвижной флюорограф»
+                ВМК-3033-01 на базе автобуса ПАЗ-32053 и ВМК-30331-01 на базе
+                автобуса ПАЗ-4234 предназначены для проведения массовых
+                рентгеновских обследований всех категорий населения с целью
+                раннего обнаружения туберкулеза и других заболеваний органов
+                грудной клетки вне стационарных лечебных учреждений:
+                <br /> - на предприятиях,
+                <br />- в учебных заведениях,
+                <br />- в воинских частях,
+                <br />- в сельской местности,
+                <br />- в пенитенциарных учреждениях,
+                <br />- в лагерях беженцев и т.д.
+            </>,
+            ob: [
+              {
+                img: <img className="npo__ob-img" src={obImg} alt="senatmed Сенатмед" />,
+                text: 'Флюорограф цифровой малодозовый «ФЦМ - Альфа» предназначен для проведения массовой флюорографии грудной клетки пациента в положении стоя в прямой и боковой проекциях, производства черепных снимков и исследования позвоночника при минимально возможной лучевой нагрузке.'
+              }
+            ],
+            gallery: [
+              {
+                img: <img src={gal1} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal3} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal4} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal5} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal2} alt="senatmed сенатмед" />
+              },
+              
+              {
+                img: <img src={gal7} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal6} alt="senatmed сенатмед" />
+              },
+            ]
+          },
+          {
+            linkItem: "/catalog/mobile-complex/npoauto/npo-mammograph",
+            img: <img class="uzi__item-img mobile" src={npoMamm} alt="senatmed сенатмед" />,
+            imgItem: <img class="npoitem__img" src={npoMamm} alt="senatmed сенатмед" />,
+            model: 'Передвижной маммограф',
+            description: 
+            <>
+                Передвижные медицинские комплексы «Женское здоровье» ВМК-3033-02 на базе автобуса ПАЗ-32053 и ВМК-30331-02 на базе автобуса ПАЗ-4234 предназначены для массового рентгенологического обследования женщин с целью раннего обнаружения рака или других заболеваний молочной железы вне стационарных лечебных учреждений:
+                <br />- на предприятиях,
+                <br />- в учебных заведениях ,
+                <br />- в воинских частях,
+                <br />- в сельской местности,
+                <br />- в пенитенциарных учреждениях,
+                <br />- в лагерях беженцев и т.д.
+            </>,
+            ob: [
+              {
+                img: <img className="npo__ob-img" src={ob1} alt="senatmed Сенатмед" />,
+                text: 'Цифровой маммограф Giotto имеет конструкционные отличия от стандартных систем, а именно, кольцевой поворотный гентри, обеспечивающий расширенные возможности при выполнении скрининга, диагностики и специализированных интервенционных процедур:'
+              },
+              {
+                img: <img className="npo__ob-img large" src={ob2} alt="senatmed Сенатмед" />,
+                text: 
+                <>
+                  Цифровой маммографический комплекс Radieq MX-600 (Ю.Корея)Представляемый комплекс для цифровой маммографии состоит из: 
+                  <br />- современного автоматизированного маммографа Radieq MX-600,
+                  <br />- оцифровщика рентгеновских снимков AGFA CR 35X ,
+                  <br />- диагностической станции врача-рентгенолога AGFA МА 3000,
+                  <br />- мультиформатного термографического принтера AGFA Drystar Axys
+                </>
+              }
+            ],
+            gallery: [
+              {
+                img: <img src={gal8} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal9} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal10} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal11} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal12} alt="senatmed сенатмед" />
+              },
+              
+              {
+                img: <img src={gal13} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal14} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal15} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal16} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal17} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal18} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal19} alt="senatmed сенатмед" />
+              },
+            ]
+          },
+        ]
+      },
+      {
+        link: "/catalog/mobile-complex/uralrentgen",
+        img: <img className="catalog__item-img ur" src={urLogo} alt="сенатмед senatmed" />,
+        antitle: 'Уралрентген',
+        list: [
+          {
+            linkItem: "/catalog/mobile-complex/npoauto/ur-fluerograph",
+            img: <img class="uzi__item-img mobile" src={urFlue} alt="senatmed сенатмед" />,
+            imgItem: <img class="npoitem__img" src={urFlue} alt="senatmed сенатмед" />,
+            model: 'Передвижной флюорограф',
+            description: 
+            <>
+                На шасси автомобилей, предназначен для обеспечения рентгенографического обследования населения вне стационара в отдаленных районах, не имеющих больниц и клиник с маммографическими и рентгенографическими кабинетами.<br />
+                Оснащается аппаратом рентгеновским цифровым и маммографом рентгеновским компьютеризированным с ручным и автоматическим управлением.<br />
+
+                Кабинет рассчитан на эксплуатацию при наружных температурах воздуха от минус 40 до плюс 40°С.<br /><br />
+                <b>Вместимость:</b>
+                <li>при движении (включая водителя): для медицинского персонала – 2 человека, для водителя – 1 человек;</li>
+                <li>на стоянке при обслуживании населения: для медицинского персонала – 2 человека, для обследуемых – 2 человека.</li><br />
+                <b>Оснащение:</b><br />
+                Вход в кабинет оснащен лестницей и площадкой из противоскользящих материалов, с поручнем. Кабинет может быть оснащен автономным дизель-генератором, обязательно в состав кабинета входит автономный жидкостный отопитель, работающий на автомобильном топливе.
+                <br /><br />
+                <b>Удобство:</b>
+                <li>Удобная планировка, позволяющая разместить в кузове-фургоне тамбур для ожидающих пациентов, процедурную с рентгенозащитной перегородкой, комнату лаборанта, делает работу медицинского персонала удобной и безопасной.</li>
+                <li>Кабинет сконструирован с учетом тепло и шумоизоляции. Комфортную температуру в кабинете поддерживает встроенный кондиционер. Над входом в кабинет установлена тепловая завеса для холодного времени года.</li>
+                <li>Для обеспечения нормальных условий работы персонала изделие снабжено системами освещения, отопления, вентиляции, водоснабжения, а также средствами пожаротушения и защиты от поражения электрическим током.</li>
+                <li>Комплекс подключается к напряжению 220В. Освещение осуществляется от естественного (два стеклопакета, оснащенные жалюзи) и искусственного освещения. В кабинете предусмотрены системы хранения. Для обеззараживания воздуха используется бактерицидная лампа закрытого типа.</li>
+            </>,
+            gallery: [
+              {
+                img: <img src={gal25} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal27} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal26} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal28} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal22} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal21} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal23} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal24} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal20} alt="senatmed сенатмед" />
+              },
+            ]
+          },
+          {
+            linkItem: "/catalog/mobile-complex/npoauto/ur-mamograph",
+            img: <img class="uzi__item-img mobile" src={urMamm} alt="senatmed сенатмед" />,
+            imgItem: <img class="npoitem__img" src={urMamm} alt="senatmed сенатмед" />,
+            model: 'Передвижной маммограф',
+            description: 
+            <>
+                На шасси автомобилей, предназначен для обеспечения рентгенографического обследования населения вне стационара в отдаленных районах, не имеющих больниц и клиник с маммографическими и рентгенографическими кабинетами. <br />
+                Оснащается аппаратом рентгеновским цифровым и маммографом рентгеновским компьютеризированным с ручным и автоматическим управлением.<br />
+                Кабинет рассчитан на эксплуатацию при наружных температурах воздуха от минус 40 до плюс 40°С.<br /><br />
+                <b>Вместимость:</b>
+                <li>при движении (включая водителя): для медицинского персонала – 2 человека, для водителя – 1 человек;</li>
+                <li>на стоянке при обслуживании населения: для медицинского персонала – 2 человека, для обследуемых – 2 человека.</li><br />
+                <b>Оснащение:</b><br />
+                Вход в кабинет оснащен лестницей и площадкой из противоскользящих материалов, с поручнем. Кабинет может быть оснащен автономным дизель-генератором, обязательно в состав кабинета входит автономный жидкостный отопитель, работающий на автомобильном топливе.
+                <br /><br />
+                <b>Удобство:</b>
+                <li>Удобная планировка, позволяющая разместить в кузове-фургоне тамбур для ожидающих пациентов, процедурную с рентгенозащитной перегородкой, комнату лаборанта, делает работу медицинского персонала удобной и безопасной.</li>
+                <li>Кабинет сконструирован с учетом тепло и шумоизоляции. Комфортную температуру в кабинете поддерживает встроенный кондиционер. Над входом в кабинет установлена тепловая завеса для холодного времени года.</li>
+                <li>Для обеспечения нормальных условий работы персонала изделие снабжено системами освещения, отопления, вентиляции, водоснабжения, а также средствами пожаротушения и защиты от поражения электрическим током.</li>
+                <li>Комплекс подключается к напряжению 220В. Освещение осуществляется от естественного (два стеклопакета, оснащенные жалюзи) и искусственного освещения. В кабинете предусмотрены системы хранения. Для обеззараживания воздуха используется бактерицидная лампа закрытого типа.</li>
+            </>,
+            gallery: [
+              {
+                img: <img src={gal29} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={urMamm} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal30} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal31} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal32} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal33} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal34} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal35} alt="senatmed сенатмед" />
+              },
+              {
+                img: <img src={gal36} alt="senatmed сенатмед" />
+              },
+            ]
+          },
+        ]
+      },
     ]
-  }
+  },
 ]

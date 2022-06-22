@@ -1,4 +1,3 @@
-import Background from "../../components/Background/Background"
 import UziCatalogList from "../../components/UziCatalogList/UziCatalogList"
 import ItemBg from "../../components/ItemBg/ItemBg"
 import { MainList } from "./MainList"

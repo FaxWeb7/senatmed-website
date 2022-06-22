@@ -9,6 +9,7 @@ import diagnostic from '../../assets/catalog/diagnostic.webp'
 import hirr from '../../assets/catalog/hirr.webp'
 import phiz from '../../assets/catalog/fizio.webp'
 import uzi from '../../assets/catalog/uzi.webp'
+import rent from '../../assets/catalog/rent.png'
 
 export const CtgList = [
   {
@@ -105,11 +106,11 @@ export const CtgList = [
     </h5> 
   },
   {
-    link: "/catalog/rentgenologiya",
+    link: "/catalog/tomographiya",
     img: <img className="catalog__item-img" src={mrt} alt="сенатмед senatmed" />,
     imgItem: <img className="catalog-page-img" src={mrt} alt="сенатмед senatmed" />,
-    title: 'Рентгенология и томография',
-    titleItem: <>Рентгенология <br/> и томография</>,
+    title: 'Компьютерная томография',
+    titleItem: <>Компьютерная <br/> томография</>,
     description: 
     <h5 className="catalog-page-text" data-aos="zoom-in" data-aos-duration="1000">
         Рентгеновский аппарат – самое распространенное диагностическое оборудование. С его помощью выполняется исследование состояния внутренних органов, мышечных и костных тканей. Рентгенограмма формируется на основе интенсивности поглощения лучей внутренними тканями организма. <br />
@@ -204,6 +205,15 @@ export const CtgList = [
     imgItem: <img className="catalog-page-img" src={uzi} alt="сенатмед senatmed" />,
     title: 'Ультразвуковая диагностика',
     titleItem: <>Ультразвуковая <br /> диагностика</>,
+    description: 
+    <h5 className="catalog-page-text" data-aos="zoom-in" data-aos-duration="1000"></h5> 
+  },
+  {
+    link: "/catalog/rentgenologiya",
+    img: <img className="catalog__item-img" src={rent} alt="сенатмед senatmed" />,
+    imgItem: <img className="catalog-page-img" src={rent} alt="сенатмед senatmed" />,
+    title: 'Рентгенология',
+    titleItem: <>Рентгенология</>,
     description: 
     <h5 className="catalog-page-text" data-aos="zoom-in" data-aos-duration="1000"></h5> 
   }
