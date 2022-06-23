@@ -1,6 +1,6 @@
-import ItemBg from "../ItemBg/ItemBg"
+import ItemBg from "../../components/ItemBg/ItemBg"
 
-const BrendItem = ({ list }) => {
+const UziCatalogItem = ({ list }) => {
   document.title = "УЗИ-аппараты | Сенатмед"
   return (
     <>
@@ -32,4 +32,4 @@ const BrendItem = ({ list }) => {
   )
 }
 
-export default BrendItem
+export default UziCatalogItem

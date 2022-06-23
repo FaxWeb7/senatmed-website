@@ -1,7 +1,7 @@
 import ItemBg from "../../components/ItemBg/ItemBg"
-import { MainList } from "../UziCatalog/MainList"
-import MobileCatalogList from "../../components/MobileCatalogList/MobileCatalogList"
-import './mobilecatalog.scss'
+import { MainList } from "../MainList"
+import MobileCatalogList from "./MobileCatalogList"
+import './scss/mobilecatalog.scss'
 
 const MobileCatalog = () => {
   document.title = 'Мобильные кабинеты | Сенатмед'

@@ -1,7 +1,7 @@
-import UziCatalogList from "../../components/UziCatalogList/UziCatalogList"
+import UziCatalogList from "./UziCatalogList"
 import ItemBg from "../../components/ItemBg/ItemBg"
-import { MainList } from "./MainList"
-import './uzicatalog.scss'
+import { MainList } from "../MainList"
+import './scss/uzicatalog.scss'
 
 const UziCatalog = () => {
   document.title = 'Ультразвуковая диагностика | Сенатмед'

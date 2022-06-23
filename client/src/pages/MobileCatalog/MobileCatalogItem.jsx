@@ -1,7 +1,7 @@
-import ItemBg from "../ItemBg/ItemBg"
-import './npocatalog.scss'
+import ItemBg from "../../components/ItemBg/ItemBg"
+import './scss/mobilecatalogitem.scss'
 
-const NpoCatalog = ({ list, title }) => {
+const MobileCatalogItem = ({ list, title }) => {
   document.title = `Мобильные кабинеты ${title} | Сенатмед`
   return (
     <>
@@ -29,4 +29,4 @@ const NpoCatalog = ({ list, title }) => {
   )
 }
 
-export default NpoCatalog
+export default MobileCatalogItem

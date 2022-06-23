@@ -2086,6 +2086,16 @@ button[type="submit"]:disabled:hover{
   border: 2px solid rgba(34, 31, 98, 1)!important;
   transform: scale(1.01)!important;
 }
+::-webkit-scrollbar {
+  width: 15px;
+}
+::-webkit-scrollbar-track {
+  background-color: darkgrey;
+}
+::-webkit-scrollbar-thumb {
+  background: #2B2960;
+  border-radius: 15px;
+}
 body {
   font-style: normal;
   color: #000;
@@ -2189,6 +2199,9 @@ h2 {
 }
 .uzi__item-title{
   text-align: center;
+}
+.uzi__item-title.min{
+  font-size: 18px!important;
 }
 @media (max-width: 705px){
   .uzi__item-pict {

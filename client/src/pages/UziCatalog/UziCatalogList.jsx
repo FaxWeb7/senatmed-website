@@ -1,6 +1,6 @@
 const UziCatalogList = ({ list }) => {
   return (
-    <ul className="catalog__list">
+    <ul className="catalog__list mobile">
       {list.map(({ uzi }, index) => {
         return(
           <>

@@ -1,7 +1,7 @@
-import "./npoitem.scss";
-import ItemBg from "../ItemBg/ItemBg";
+import "./scss/mobileitem.scss";
+import ItemBg from "../../components/ItemBg/ItemBg";
 
-const NpoItem = ({ model, img, description, ob, gallery }) => {
+const MobileItem = ({ model, img, description, ob, gallery }) => {
   document.title = `${model} | Сенатмед`;
   return (
     <>
@@ -58,4 +58,4 @@ const NpoItem = ({ model, img, description, ob, gallery }) => {
   );
 };
 
-export default NpoItem;
+export default MobileItem;

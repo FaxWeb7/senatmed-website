@@ -1,16 +1,16 @@
 import ItemBg from "../../components/ItemBg/ItemBg"
-import RenCatalogList from "./RenCatalogList"
 import { MainList } from "../MainList"
+import PhizCatalogList from "./PhizCatalogList"
 
-const RenCatalog = () => {
-  document.title = 'Рентгенология | Сенатмед'
+const PhizCatalog = () => {
+  document.title = 'Физиотерапия и реабилитация | Сенатмед'
   return (
     <>
       <ItemBg title="Выберите бренд" />
       <div className="catalog">
         <div className="container">
           <div className="catalog__inner">
-            <RenCatalogList list={MainList} />
+            <PhizCatalogList list={MainList} />
           </div>
         </div>
       </div>
@@ -18,4 +18,4 @@ const RenCatalog = () => {
   )
 }
 
-export default RenCatalog
+export default PhizCatalog

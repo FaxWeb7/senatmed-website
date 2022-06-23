@@ -1,7 +1,7 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import './uziitem.scss'
+import './scss/uziitem.scss'
 
 const UziItem = ({ images, model, subtitleItem, itemDesc, oss, slider }) => {
   document.title = `${model} | Сенатмед`;

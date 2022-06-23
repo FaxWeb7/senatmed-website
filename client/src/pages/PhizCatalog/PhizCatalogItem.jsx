@@ -1,10 +1,10 @@
 import ItemBg from "../../components/ItemBg/ItemBg"
 
-const GelCatalog = ({ list, title }) => {
+const PhizCatalogItem = ({ list, title }) => {
   document.title = `Рентгенология ${title} | Сенатмед`
   return (
     <>
-      <ItemBg title={`Аппараты ${title}`} />
+      <ItemBg title={`Оборудование ${title}`} />
       <section className="uzi">
         <div className="container">
           <div className="uzi__inner">
@@ -13,7 +13,7 @@ const GelCatalog = ({ list, title }) => {
                 return(
                   <li className="uzi__list-item" key={index}>
                     <a href={linkItem} className="uzi__item-pict">{img}</a>
-                    <h2 className="uzi__item-title">{model}</h2>
+                    <h2 className="uzi__item-title min">{model}</h2>
                     <ul className="uzi__description-list" style={{marginTop: "10px"}}>
                       {description}</ul>
                     <button id="order-btn" className="uzi__order-btn">
@@ -30,4 +30,4 @@ const GelCatalog = ({ list, title }) => {
   )
 }
 
-export default GelCatalog
+export default PhizCatalogItem

@@ -2,10 +2,10 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import ItemBg from "../../components/ItemBg/ItemBg";
-import './gelitem.scss'
 import pre0 from '../../assets/catalog/rentgenologiya/gelpik/pre0.png'
+import './scss/renitem.scss'
 
-const GelItem = ({ images, model, description, pre, tech }) => {
+const RenItem = ({ images, model, description, pre, tech }) => {
   document.title = `${model} | Сенатмед`;
   const settings = {
     dots: true,
@@ -83,4 +83,4 @@ const GelItem = ({ images, model, description, pre, tech }) => {
   )
 }
 
-export default GelItem
+export default RenItem
