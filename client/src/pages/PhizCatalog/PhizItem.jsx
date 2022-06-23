@@ -4,7 +4,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import pre0 from '../../assets/catalog/rentgenologiya/gelpik/pre0.png';
 
-const PhizItem = ({ images, model, description, pre, tech }) => {
+const PhizItem = ({ images, model, description, pre, tech, price }) => {
   document.title = `${model} | Сенатмед`;
   const settings = {
     dots: true,
@@ -37,6 +37,7 @@ const PhizItem = ({ images, model, description, pre, tech }) => {
               <div className="uzi-item-desc">
                 <div className="desc-wrapper">
                   <h1 className="uzi-item-title">{model}</h1>
+                  <h3 className="uzi-item-price">{price}</h3>
                 </div>
                 <p className="uzi-item-text">{description}</p>
                 <a className="uzi-item-link" href="#mail">Свяжитесь с нами</a>

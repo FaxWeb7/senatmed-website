@@ -74,7 +74,7 @@ root.render(
                     <>
                       {list.map(({ linkItem, images, model, itemDesc, pre, tech }, index) => {
                         return(
-                          <Route key={index} path={linkItem} element={<RenItem model={model} images={images} description={itemDesc} pre={pre} tech={tech}  />} exact/>
+                          <Route key={index} path={linkItem} element={<RenItem model={model} images={images} description={itemDesc} pre={pre} tech={tech} />} exact/>
                         )
                       })}
                       <Route key={index} path={link} element={<RenCatalogItem list={list} title={antitle} />} exact/>
@@ -84,9 +84,9 @@ root.render(
                 {phiz.map(({ link, list, antitle }, index) => {
                   return(
                     <>
-                      {list.map(({ linkItem, images, model, itemDesc, pre, tech }, index) => {
+                      {list.map(({ linkItem, images, model, itemDesc, pre, tech, price }, index) => {
                         return(
-                          <Route key={index} path={linkItem} element={<PhizItem model={model} images={images} description={itemDesc} pre={pre} tech={tech} />} exact/>
+                          <Route key={index} path={linkItem} element={<PhizItem model={model} images={images} description={itemDesc} pre={pre} tech={tech} price={price} />} exact/>
                         )
                       })} 
                       <Route key={index} path={link} element={<PhizCatalogItem list={list} title={antitle} />} exact/>

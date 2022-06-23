@@ -2203,6 +2203,17 @@ h2 {
 .uzi__item-title.min{
   font-size: 18px!important;
 }
+.uzi-item-price{
+  margin-top: 10px;
+  margin-bottom: -5px;
+  font-size: 21px;
+  text-align: start;
+}
+@media(max-width: 967px){
+  .uzi-item-price{
+    text-align: center;
+  }
+}
 @media (max-width: 705px){
   .uzi__item-pict {
     margin-bottom: -10px!important;

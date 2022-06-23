@@ -2,6 +2,7 @@ import ItemBg from "../../components/ItemBg/ItemBg"
 
 const PhizCatalogItem = ({ list, title }) => {
   document.title = `Рентгенология ${title} | Сенатмед`
+
   return (
     <>
       <ItemBg title={`Оборудование ${title}`} />
@@ -9,7 +10,7 @@ const PhizCatalogItem = ({ list, title }) => {
         <div className="container">
           <div className="uzi__inner">
             <ul className="uzi__list">
-              {list.map(({ linkItem, img, model, description  }, index) => {
+            {list.map(({ linkItem, img, model, description }, index) => {
                 return(
                   <li className="uzi__list-item" key={index}>
                     <a href={linkItem} className="uzi__item-pict">{img}</a>
@@ -21,7 +22,8 @@ const PhizCatalogItem = ({ list, title }) => {
                     </button>
                   </li>
                 )
-              })}
+              })
+            }
             </ul>
           </div>
         </div>
