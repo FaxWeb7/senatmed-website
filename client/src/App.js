@@ -1,8 +1,8 @@
 import AOS from 'aos';
 import './app.css'
-import Header from './components/Header/Header';
-import Footer from './components/Footer/Footer';
-import Mail from './components/Mail/Mail';
+import Header from './components/screens/Home/Header';
+import Footer from './components/screens/Home/Footer';
+import Mail from './components/screens/Home/Mail';
 
 
 const App = ({ children }) => {

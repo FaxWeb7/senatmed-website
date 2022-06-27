@@ -2209,6 +2209,22 @@ h2 {
   font-size: 21px;
   text-align: start;
 }
+.fl__item-title{
+  max-width: 480px;
+}
+.catalog__list.brend{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.catalog__item.brend{
+  width: 30.2%;
+}
+.fl__item-title.aic{
+  font-size: 16px!important;
+}
 @media(max-width: 967px){
   .uzi-item-price{
     text-align: center;

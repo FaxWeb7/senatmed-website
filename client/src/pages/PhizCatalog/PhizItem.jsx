@@ -1,4 +1,4 @@
-import ItemBg from "../../components/ItemBg/ItemBg";
+import ItemBg from "../../components/ui/ItemBg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -6,6 +6,8 @@ import pre0 from '../../assets/catalog/rentgenologiya/gelpik/pre0.png';
 
 const PhizItem = ({ images, model, description, pre, tech, price }) => {
   document.title = `${model} | Сенатмед`;
+  document.querySelector('meta[name="description"]').content = `${model} ООО "Сенатмед"`;
+  document.querySelector('meta[name="keywords"]').content = `${model}, медицина, Реабилитация, нейрореабилитация`;
   const settings = {
     dots: true,
     arrows: false,
@@ -28,7 +30,7 @@ const PhizItem = ({ images, model, description, pre, tech, price }) => {
                   <Slider {...settings} className="uzi-item-slider">
                     {images.map(({item}, index) => {
                       return(
-                        <li className="uzi-item-slider-item">{item}</li>
+                        <li className="uzi-item-slider-item" key={index}>{item}</li>
                       )
                     })}
                   </Slider>
@@ -49,11 +51,11 @@ const PhizItem = ({ images, model, description, pre, tech, price }) => {
                 <ul className="fl__list">
                   {pre.map(({ title, text }, index) => {
                     return(
-                      <li className="fl__item" key={index}>
+                      <li className={text !== null ? 'fl__item' : 'fl__item aic' } key={index}>
                         <img className='fl__img' src={pre0} alt='senatmed сенатмед' />
                         <div className="fl__item-content">
-                          <h2 className="fl__item-title">{title}</h2>
-                          <p className="fl__text">{text}</p>
+                          <h2 className={text !== null ? 'fl__item-title' : 'fl__item-title aic'}>{title}</h2>
+                          {text ? <p className="fl__text">{text}</p> : null}
                         </div>
                       </li>
                       )}

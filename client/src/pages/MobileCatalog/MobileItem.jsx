@@ -1,8 +1,10 @@
 import "./scss/mobileitem.scss";
-import ItemBg from "../../components/ItemBg/ItemBg";
+import ItemBg from "../../components/ui/ItemBg";
 
 const MobileItem = ({ model, img, description, ob, gallery }) => {
   document.title = `${model} | Сенатмед`;
+  document.querySelector('meta[name="description"]').content = `${model} ООО "Сенатмед"`;
+  document.querySelector('meta[name="keywords"]').content = `мобильные кабинеты, ${model}  медицина, мобильные комплексы`
   return (
     <>
       <ItemBg title={model} />
@@ -43,7 +45,7 @@ const MobileItem = ({ model, img, description, ob, gallery }) => {
                 <ul className="npoitem__gallery-list">
                   {gallery.map(({ img }, index) => {
                     return(
-                      <li className="npo__gallery-item">
+                      <li className="npo__gallery-item" key={index}>
                         {img}
                       </li>
                     )

@@ -2,9 +2,12 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import './scss/uziitem.scss'
+import pre0 from '../../assets/catalog/rentgenologiya/gelpik/pre0.png';
 
-const UziItem = ({ images, model, subtitleItem, itemDesc, oss, slider }) => {
+const UziItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis, pre }) => {
   document.title = `${model} | Сенатмед`;
+  document.querySelector('meta[name="description"]').content = `${model} ООО "Сенатмед"`;
+  document.querySelector('meta[name="keywords"]').content = `${model}, диагностика, медицина, Ультразвуковая диагностика, УЗИ, узи`;
   const settings = {
     dots: true,
     arrows: false,
@@ -83,6 +86,54 @@ const UziItem = ({ images, model, subtitleItem, itemDesc, oss, slider }) => {
                 </>
               )}
             </div>
+            {pre !== null &&(
+              <div className="fl">
+                <h1 className="fl__title">Преимущества</h1>
+                <ul className="fl__list">
+                  {pre.map(({ title, text }, index) => {
+                    return(
+                      <li className="fl__item" key={index}>
+                        <img className='fl__img' src={pre0} alt='senatmed сенатмед' />
+                        <div className="fl__item-content">
+                          <h2 className="fl__item-title">{title}</h2>
+                          <p className="fl__text">{text}</p>
+                        </div>
+                      </li>
+                      )}
+                    )}
+                </ul>
+              </div>
+            )}
+            {tech !== null &&(
+              <div className="tech">
+                <h1 className="tech__title">Характеристики</h1>
+                <ul className="tech__list">
+                  {tech.map(({ el }, index) => {
+                    return(
+                      <li className="tech__item" key={index}>
+                        <div className="tech__line"></div>
+                        <p className="tech__text">{el}</p>
+                      </li>
+                      )}
+                    )}
+                </ul>
+              </div>
+            )}
+            {vis !== null &&(
+              <div className="tech">
+                <h1 className="tech__title">Режимы визуализации</h1>
+                <ul className="tech__list">
+                  {vis.map(({ el }, index) => {
+                    return(
+                      <li className="tech__item" key={index}>
+                        <div className="tech__line"></div>
+                        <p className="tech__text">{el}</p>
+                      </li>
+                      )}
+                    )}
+                </ul>
+              </div>
+            )}
             {slider != null && (
               <>
               <div className="slider2-wrapper">

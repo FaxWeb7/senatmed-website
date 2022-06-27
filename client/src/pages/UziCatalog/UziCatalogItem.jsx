@@ -1,4 +1,4 @@
-import ItemBg from "../../components/ItemBg/ItemBg"
+import ItemBg from "../../components/ui/ItemBg"
 
 const UziCatalogItem = ({ list }) => {
   document.title = "УЗИ-аппараты | Сенатмед"

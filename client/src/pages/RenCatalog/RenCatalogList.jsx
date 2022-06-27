@@ -1,9 +1,9 @@
 const RenCatalogList = ({ list }) => {
   return (
-    <ul className="catalog__list mobile">
+    <>
       {list.map(({ rent }, index) => {
         return(
-          <>
+          <ul className="catalog__list mobile" key={index}>
             {rent.map(({ link, img },index) => {
               return(
                 <li key={index} className="catalog__item uzi mobile" data-aos="zoom-in" data-aos-duration="700">
@@ -12,10 +12,10 @@ const RenCatalogList = ({ list }) => {
                 </li>
               )
             })}
-          </>
+          </ul>
         )
       })}
-    </ul>
+    </>
   )
 }
 

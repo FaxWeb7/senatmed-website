@@ -1,10 +1,12 @@
-import ItemBg from "../../components/ItemBg/ItemBg"
-import { MainList } from "../MainList"
+import ItemBg from "../../components/ui/ItemBg"
+import { MainList } from "../../utils/MainList"
 import MobileCatalogList from "./MobileCatalogList"
 import './scss/mobilecatalog.scss'
 
 const MobileCatalog = () => {
   document.title = 'Мобильные кабинеты | Сенатмед'
+  document.querySelector('meta[name="description"]').content = `Мобильные кабинеты ООО "Сенатмед"`;
+  document.querySelector('meta[name="keywords"]').content = 'мобильный кабинеты, медицина, мобильные комплексы';
   return (
     <>
       <ItemBg title="Выберите бренд" />

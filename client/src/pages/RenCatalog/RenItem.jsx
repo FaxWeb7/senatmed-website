@@ -1,12 +1,14 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import ItemBg from "../../components/ItemBg/ItemBg";
+import ItemBg from "../../components/ui/ItemBg";
 import pre0 from '../../assets/catalog/rentgenologiya/gelpik/pre0.png'
 import './scss/renitem.scss'
 
 const RenItem = ({ images, model, description, pre, tech }) => {
   document.title = `${model} | Сенатмед`;
+  document.querySelector('meta[name="description"]').content = `${model} ООО "Сенатмед"`;
+  document.querySelector('meta[name="keywords"]').content = `${model}, рентгенология`;
   const settings = {
     dots: true,
     arrows: false,

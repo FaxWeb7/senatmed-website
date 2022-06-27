@@ -1,4 +1,4 @@
-import ItemBg from "../../components/ItemBg/ItemBg"
+import ItemBg from "../../components/ui/ItemBg"
 
 const PhizCatalogItem = ({ list, title }) => {
   document.title = `Рентгенология ${title} | Сенатмед`

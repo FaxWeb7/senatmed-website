@@ -1,9 +1,11 @@
-import ItemBg from "../../components/ItemBg/ItemBg"
+import ItemBg from "../../components/ui/ItemBg"
 import RenCatalogList from "./RenCatalogList"
-import { MainList } from "../MainList"
+import { MainList } from "../../utils/MainList"
 
 const RenCatalog = () => {
   document.title = 'Рентгенология | Сенатмед'
+  document.querySelector('meta[name="description"]').content = document.title;
+  document.querySelector('meta[name="keywords"]').content = `рентгенология, рентген`;
   return (
     <>
       <ItemBg title="Выберите бренд" />

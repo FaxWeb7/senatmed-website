@@ -1,4 +1,4 @@
-import ItemBg from "../../components/ItemBg/ItemBg"
+import ItemBg from "../../components/ui/ItemBg"
 import './scss/mobilecatalogitem.scss'
 
 const MobileCatalogItem = ({ list, title }) => {

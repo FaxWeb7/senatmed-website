@@ -1,8 +1,8 @@
-import About from '../../components/About/About'
-import Offer from '../../components/Offer/Offer'
-import Partners from '../../components/Partners/Partners'
-import Range from '../../components/Range/Range'
-import Top from '../../components/Top/Top'
+import About from '../../components/screens/Home/About'
+import Offer from '../../components/screens/Home/Offer'
+import Partners from '../../components/screens/Home/Partners'
+import Range from '../../components/screens/Home/Range'
+import Top from '../../components/screens/Home/Top'
 
 const Main = () => {
   return (
