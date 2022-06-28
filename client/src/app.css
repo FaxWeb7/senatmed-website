@@ -1772,6 +1772,27 @@ button[type="submit"]:disabled:hover{
   height: 50px!important;
   cursor: pointer;
 }
+.uzi-item-text{
+  text-align: left!important;
+}
+.uzi-item-text li{
+  list-style-type: none;
+  text-align: left!important;
+}
+.uzi-item-text li::before{
+  content: "✅";
+  display: inline-block;
+  margin-right: 0.2rem;
+}
+.uzi-item-text li ul li{
+  list-style-type: circle;
+  text-align: left!important;
+}
+.uzi-item-text li ul li::before{
+  content: "";
+  display: inline-block;
+  margin-right: 0.2rem;
+}
 @media(max-width: 420px){
   .uzi__order{
     right: 10px;
@@ -2224,6 +2245,9 @@ h2 {
 }
 .fl__item-title.aic{
   font-size: 16px!important;
+}
+.fl__text li{
+  list-style-type: disc;
 }
 @media(max-width: 967px){
   .uzi-item-price{
@@ -2785,3 +2809,11 @@ h2 {
   }
 }
 
+@media (max-width: 325px){
+  .catalog__item-img {
+    max-width: 270px;
+  }
+  .uzi__list-item{
+    max-width: 270px;
+  }
+}
