@@ -1,7 +1,7 @@
 import ItemBg from "../../components/ui/ItemBg"
 
 const PhizCatalogItem = ({ list, title }) => {
-  document.title = `Рентгенология ${title} | Сенатмед`
+  document.title = `Реабилитация ${title} | Сенатмед`
 
   return (
     <>

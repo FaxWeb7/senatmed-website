@@ -5,7 +5,7 @@ const FurnCatalogItem = ({ list, title }) => {
 
   return (
     <>
-      <ItemBg title={`Оборудование ${title}`} />
+      <ItemBg title={`Медицинская мебель ${title}`} />
       <section className="uzi">
         <div className="container">
           <div className="uzi__inner">

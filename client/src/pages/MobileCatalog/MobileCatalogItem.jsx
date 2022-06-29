@@ -5,7 +5,7 @@ const MobileCatalogItem = ({ list, title }) => {
   document.title = `Мобильные кабинеты ${title} | Сенатмед`
   return (
     <>
-    <ItemBg title={title} />
+    <ItemBg title={`Мобильные кабинеты ${title}`} />
     <section className="uzi mobile">
       <div className="container">
         <div className="uzi__inner mobile">

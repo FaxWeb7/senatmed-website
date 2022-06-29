@@ -1,10 +1,10 @@
 import ItemBg from "../../components/ui/ItemBg"
 
-const UziCatalogItem = ({ list }) => {
-  document.title = "УЗИ-аппараты | Сенатмед"
+const UziCatalogItem = ({ list, title }) => {
+  document.title = `УЗИ-аппараты ${title} | Сенатмед`
   return (
     <>
-    <ItemBg title="УЗИ-аппараты" />
+    <ItemBg title={`УЗИ-аппараты ${title}`} />
     <section className="uzi">
       <div className="container">
         <div className="uzi__inner">

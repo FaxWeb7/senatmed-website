@@ -1,7 +1,7 @@
 import ItemBg from "../../components/ui/ItemBg"
 
 const AneCatalogItem = ({ list, title }) => {
-  document.title = `Анестезиология ${title} | Сенатмед`
+  document.title = `Оборудование ${title} | Сенатмед`
 
   return (
     <>

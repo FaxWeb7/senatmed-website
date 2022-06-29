@@ -1780,7 +1780,7 @@ button[type="submit"]:disabled:hover{
   text-align: left!important;
 }
 .uzi-item-text li::before{
-  content: "✅";
+  content: "✔";
   display: inline-block;
   margin-right: 0.2rem;
 }
@@ -1792,6 +1792,11 @@ button[type="submit"]:disabled:hover{
   content: "";
   display: inline-block;
   margin-right: 0.2rem;
+}
+@media(min-width: 360px){
+  .catalog__item{
+    padding: 10px;
+  }
 }
 @media(max-width: 420px){
   .uzi__order{
@@ -2248,6 +2253,10 @@ h2 {
 }
 .fl__text li{
   list-style-type: disc;
+}
+.slick-track{
+  display: flex!important;
+  align-items: center!important;
 }
 @media(max-width: 967px){
   .uzi-item-price{

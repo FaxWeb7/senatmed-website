@@ -6,11 +6,11 @@ import Main from "./pages/Main/Main";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import CatalogItem from './components/screens/Catalog/CatalogItem';
 import { CtgList } from './utils/CtgList';
-import UziCatalog from './pages/UziCatalog/UziCatalog';
 import Error from './components/screens/404/Error'
 import Terms from './components/screens/TermsOfUse/Terms'
 import Privacy from './components/screens/PrivacyPolicy/Privacy'
 import { MainList } from './utils/MainList';
+import UziCatalog from './pages/UziCatalog/UziCatalog';
 import UziCatalogItem from './pages/UziCatalog/UziCatalogItem';
 import UziItem from './pages/UziCatalog/UziItem';
 import MobileCatalog from './pages/MobileCatalog/MobileCatalog';
@@ -58,15 +58,15 @@ root.render(
           {MainList.map(( { uzi, mobile, rent, phiz, hirr, ane,  furn }, index) => {
             return(
               <Fragment key={index}>
-                {uzi.map(({ link, list }, index) => {
+                {uzi.map(({ link, list, antitle }, index) => {
                   return(
-                    <Fragment key={index}>
+                    <Fragment key={index}> 
                       {list.map(({ linkItem, images, model, subtitleItem, itemDesc, oss, slider, tech, vis, pre }, index) => {
                         return(
                           <Route key={index} path={linkItem} element={<UziItem images={images} model={model} subtitleItem={subtitleItem} itemDesc={itemDesc} oss={oss} tech={tech ? tech : null} vis={vis ? vis : null} pre={pre ? pre : null} slider={slider}/>} exact/>
                         )
                       })}
-                      <Route key={index} path={link} element={<UziCatalogItem list={list} />} exact/>
+                      <Route key={index} path={link} element={<UziCatalogItem list={list} title={antitle} />} exact/>
                     </Fragment>
                   )
                 })}
