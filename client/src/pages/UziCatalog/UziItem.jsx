@@ -3,6 +3,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './scss/uziitem.scss'
 import pre0 from '../../assets/catalog/rentgenologiya/gelpik/pre0.png';
+// import { useOutside } from "../../hooks/useOutside";
+import { useState } from 'react';
+import { Modal } from 'react-bootstrap'
+
 
 const UziItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis, pre }) => {
   document.title = `${model} | Сенатмед`;
@@ -40,10 +44,33 @@ const UziItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis
       }
     ]
   };
+
+  const [show, setShow] = useState(false);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   
   return (
     <>
       {/* <ItemBg title=""></ItemBg> */}
+      <div className="modal">
+
+        <Modal show={show} onHide={handleClose} >
+          <Modal.Header closeButton>
+            <Modal.Title>{model}</Modal.Title>
+          </Modal.Header>
+            <Modal.Body >
+              <Slider {...settings} className="uzi-item-slider">
+                {images.map(({item}, index) => {
+                  return(
+                    <li className="uzi-item-slider-item" onClick={handleShow} key={index}>{item}</li>
+                  )
+                })}
+              </Slider>
+            </Modal.Body>
+          <Modal.Footer>
+          </Modal.Footer>
+        </Modal>
+      </div>
       <section className="uzi-item">
         <div className="min-uzi-container">
           <div className="uzi-item__inner">
@@ -53,7 +80,7 @@ const UziItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis
                   <Slider {...settings} className="uzi-item-slider">
                     {images.map(({item}, index) => {
                       return(
-                        <li className="uzi-item-slider-item">{item}</li>
+                        <li className="uzi-item-slider-item" onClick={handleShow} key={index}>{item}</li>
                       )
                     })}
                   </Slider>

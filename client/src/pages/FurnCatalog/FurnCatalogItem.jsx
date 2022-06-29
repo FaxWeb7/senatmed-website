@@ -2,14 +2,13 @@ import ItemBg from "../../components/ui/ItemBg"
 
 const FurnCatalogItem = ({ list, title }) => {
   document.title = `Медицинская мебель ${title} | Сенатмед`
-
   return (
     <>
       <ItemBg title={`Медицинская мебель ${title}`} />
       <section className="uzi">
         <div className="container">
           <div className="uzi__inner">
-            <ul className="uzi__list">
+          <ul className="uzi__list">
             {list.map(({ linkItem, img, model, description }, index) => {
                 return(
                   <li className="uzi__list-item" key={index}>
