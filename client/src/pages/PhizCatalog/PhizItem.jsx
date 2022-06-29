@@ -39,13 +39,13 @@ const PhizItem = ({ images, model, description, pre, tech, price }) => {
               <div className="uzi-item-desc">
                 <div className="desc-wrapper">
                   <h1 className="uzi-item-title">{model}</h1>
-                  <h3 className="uzi-item-price">{price}</h3>
+                  <h3 className="uzi-item-price">{price !== null && price}</h3>
                 </div>
                 <p className="uzi-item-text">{description}</p>
                 <a className="uzi-item-link" href="#mail">Свяжитесь с нами</a>
               </div>
             </div>
-            {pre !== '' &&(
+            {pre !== null &&(
               <div className="fl">
                 <h1 className="fl__title">Преимущества</h1>
                 <ul className="fl__list">
@@ -63,7 +63,7 @@ const PhizItem = ({ images, model, description, pre, tech, price }) => {
                 </ul>
               </div>
             )}
-            {tech !== '' &&(
+            {tech !== null &&(
               <div className="tech">
                 <h1 className="tech__title">Характеристики</h1>
                 <ul className="tech__list">

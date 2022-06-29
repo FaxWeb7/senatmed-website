@@ -45,7 +45,7 @@ const HirrItem = ({ images, model, description, pre, tech, price }) => {
                 <a className="uzi-item-link" href="#mail">Свяжитесь с нами</a>
               </div>
             </div>
-            {pre !== '' &&(
+            {pre !== null &&(
               <div className="fl">
                 <h1 className="fl__title">Преимущества</h1>
                 <ul className="fl__list">

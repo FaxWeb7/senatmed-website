@@ -45,7 +45,7 @@ const AneItem = ({ images, model, description, pre, tech, price }) => {
                 <a className="uzi-item-link" href="#mail">Свяжитесь с нами</a>
               </div>
             </div>
-            {pre !== '' &&(
+            {pre !== null &&(
               <div className="fl">
                 <h1 className="fl__title">Преимущества</h1>
                 <ul className="fl__list">
@@ -63,7 +63,7 @@ const AneItem = ({ images, model, description, pre, tech, price }) => {
                 </ul>
               </div>
             )}
-            {tech !== '' &&(
+            {tech !== null &&(
               <div className="tech">
                 <h1 className="tech__title">Характеристики</h1>
                 <ul className="tech__list">
