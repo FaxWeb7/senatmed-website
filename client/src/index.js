@@ -1,7 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Catalog from './pages/Catalog/Catalog';
 import Main from "./pages/Main/Main";
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
@@ -33,6 +32,7 @@ import FurnCatalog from './pages/FurnCatalog/FurnCatalog';
 import FurnCatalogItem from './pages/FurnCatalog/FurnCatalogItem';
 import FurnItem from './pages/FurnCatalog/FurnItem';
 import { Fragment } from 'react'
+import BrendItem from './components/screens/Catalog/BrendItem';
 
 const root = ReactDOM.createRoot(document.getElementById('app'));
 root.render(
@@ -64,7 +64,8 @@ root.render(
                     <Fragment key={index}> 
                       {list.map(({ linkItem, images, model, subtitleItem, itemDesc, oss, slider, tech, vis, pre }, index) => {
                         return(
-                          <Route key={index} path={linkItem} element={<UziItem images={images} model={model} subtitleItem={subtitleItem} itemDesc={itemDesc} oss={oss} tech={tech ? tech : null} vis={vis ? vis : null} pre={pre ? pre : null} slider={slider}/>} exact/>
+                          // <Route key={index} path={linkItem} element={<BrendItem images={images ? images : null} model={model ? model : null} subtitleItem={subtitleItem ? subtitleItem : null} itemDesc={itemDesc ? itemDesc : null} oss={oss ? oss : null} tech={tech ? tech : null} vis={vis ? vis : null} pre={pre ? pre : null} slider={slider ? slider : null}/>} exact/>
+                          <Route key={index} path={linkItem} element={<BrendItem images={images ? images : null} model={model ? model : null} subtitleItem={subtitleItem ? subtitleItem : null} itemDesc={itemDesc ? itemDesc : null} oss={oss ? oss : null} tech={tech ? tech : null} vis={vis ? vis : null} pre={pre ? pre : null} slider={slider ? slider : null}/>} exact/>
                         )
                       })}
                       <Route key={index} path={link} element={<UziCatalogItem list={list} title={antitle} />} exact/>
@@ -74,9 +75,9 @@ root.render(
                 {mobile.map(({ link, list, antitle }, index) => {
                   return(
                     <Fragment key={index}>
-                      {list.map(({ linkItem, model, imgItem, description, ob, gallery }, index) => {
+                      {list.map(({ linkItem, model, images, description, ob, gallery }, index) => {
                         return(
-                          <Route key={index} path={linkItem} element={<MobileItem model={model} img={imgItem}description={description} ob={ob} gallery={gallery} />} exact/>
+                          <Route key={index} path={linkItem} element={<MobileItem model={model} images={images} description={description} ob={ob} gallery={gallery} />} exact/>
                         )
                       })}
                       <Route key={index} path={link} element={<MobileCatalogItem list={list} title={antitle} />} exact/>
