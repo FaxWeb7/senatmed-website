@@ -130,9 +130,9 @@
       width: 30px;
       height: 35px;
       // transition: all 0.3s ease;
-      background: url('../../../assets/catalog/uzi/scan/arrowLeft.svg') 0 0 / 100% no-repeat;
+      background: url('../../../../assets/catalog/uzi/scan/arrowLeft.svg') 0 0 / 100% no-repeat;
       &:hover{
-        background: url('../../../assets/catalog/uzi/scan/arrowLeftHover.svg') 0 0 / 100% no-repeat;
+        background: url('../../../../assets/catalog/uzi/scan/arrowLeftHover.svg') 0 0 / 100% no-repeat;
       }
       &::before{
         content: '';
@@ -144,9 +144,9 @@
       width: 30px;
       height: 35px;
       // transition: all 0.3s ease;
-      background: url('../../../assets/catalog/uzi/scan/arrowRight.svg') 0 0 / 100% no-repeat;
+      background: url('../../../../assets/catalog/uzi/scan/arrowRight.svg') 0 0 / 100% no-repeat;
       &:hover{
-        background: url('../../../assets/catalog/uzi/scan/arrowRightHover.svg') 0 0 / 100% no-repeat;
+        background: url('../../../../assets/catalog/uzi/scan/arrowRightHover.svg') 0 0 / 100% no-repeat;
       }
       &::before{
         content: '';
@@ -269,3 +269,4 @@
     }
   }
 }
+

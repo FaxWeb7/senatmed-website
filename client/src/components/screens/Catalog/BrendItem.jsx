@@ -1,11 +1,19 @@
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
-import '../../../pages/UziCatalog/scss/uziitem.scss'
+import './scss/mobilecatalog.scss'
+import './scss/mobilecatalogitem.scss'
+import './scss/mobileitem.scss'
+import './scss/uziitem.scss'
+import './scss/rencatalog.scss'
 import pre0 from '../../../assets/catalog/rentgenologiya/gelpik/pre0.png';
 import { useOutside } from "../../../hooks/useOutside";
+import ItemBg from "../../ui/ItemBg";
 
-const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis, pre }) => {
+const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis, pre, price, ob, gallery }) => {
+  document.title = `${model} | Сенатмед`;
+  document.querySelector('meta[name="description"]').content = `${model} ООО "Сенатмед"`;
+  document.querySelector('meta[name="keywords"]').content = ` ${model}  медицина, сенатмед`
   const settings = {
     dots: true,
     arrows: false,
@@ -41,6 +49,8 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
   const {ref, isShow, setIsShow} = useOutside(false)
 
   return (
+    <>
+    <ItemBg title={model} />
     <section className="uzi-item">
       <div className="min-uzi-container">
         <div className="uzi-item__inner">
@@ -60,6 +70,7 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
               <div className="desc-wrapper">
                 <h1 className="uzi-item-title">{model !== null && model}</h1>
                 <h2 className="uzi-item-subtitle">{subtitleItem !== null && subtitleItem}</h2>
+                <h3 className="uzi-item-price">{price !== null && price}</h3>
               </div>
               <p className="uzi-item-text">{itemDesc !== null  && itemDesc}</p>
               <a className="uzi-item-link" href="#mail">Свяжитесь с нами</a>
@@ -131,7 +142,7 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
               </ul>
             </div>
           )}
-          {slider != null && (
+          {slider !== null && (
             <>
             <div className="slider2-wrapper">
               <h1 className="slider-titlee">Датчики для сканера</h1>
@@ -140,7 +151,7 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
             <Slider {...settings2} className="uzi-item-slider2">
               {slider.map(({ img, title, text }, index) => {
                 return(
-                  <li className="slider2-item">
+                  <li className="slider2-item" key={index}>
                     {img}
                     <h2 className="slider2-title">{title}</h2>
                     <h4 className="slider2-text">{text}</h4>
@@ -150,9 +161,45 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
             </Slider>
             </>
             )}
+          {ob !== null && (
+            <>
+              <div className="npoitem__ob">
+                <h2 className="npoitem__ob-title">
+                  Основное медицинское оборудование
+                </h2>
+                <ul className="npo__ob-list">
+                  {ob.map(({ img, text }, index) => {
+                    return(
+                      <li className="npo__ob-item" key={index}>
+                        {img}
+                        <p className="npo__ob-text">
+                          {text}
+                        </p>
+                      </li>
+                    )
+                  })}
+                </ul>
+              </div>
+            </>
+          )}
+          {gallery !== null && (
+            <div className="npoitem__gallery">
+              <h1 className="npoitem__gallery-title">Галерея</h1>
+              <ul className="npoitem__gallery-list">
+                {gallery.map(({ img }, index) => {
+                  return(
+                    <li className="npo__gallery-item" key={index}>
+                      {img}
+                    </li>
+                  )
+                })}
+              </ul>
+            </div>
+          )}
         </div>
       </div>
     </section>
+    </>
   )
 }
 

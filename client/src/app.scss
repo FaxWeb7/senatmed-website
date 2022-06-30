@@ -2253,7 +2253,21 @@ h2 {
 .btn-close:hover{
   cursor: pointer;
 }
+.catalog__item-link.uzi{
+  margin: 0 auto;
+  width: 60%;
+  text-align: center;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
+.catalog__item.uzi{
+  border-radius: 10px;
+  border: 2px solid rgba(34,31,98,.4);
+  padding-bottom: 15px;
+}
 .fl__item-title.aic{
   font-size: 16px!important;
 }

@@ -426,7 +426,9 @@ import dzmo1g4 from '../assets/catalog/furn/dzmo/dzmo1g4.jpg'
 
 export const MainList = [
   {
-    uzi: [
+    mainLink: '/catalog/uzi-apparats',
+    mainTitle: 'Ультразвуковая диагностика',
+    ctgItem: [
       {
         link: '/catalog/uzi-apparats/phillips',
         img: (
@@ -1991,7 +1993,11 @@ export const MainList = [
         ],
       },
     ],
-    mobile: [
+  },
+  {
+    mainLink: '/catalog/mobile-complex',
+    mainTitle: 'Мобильные кабинеты',
+    ctgItem: [
       {
         link: '/catalog/mobile-complex/npoauto',
         img: (
@@ -2012,15 +2018,13 @@ export const MainList = [
                 alt="senatmed сенатмед"
               />
             ),
-            images: (
-              <img
-                className="npoitem__img"
-                src={npoFlue}
-                alt="senatmed сенатмед"
-              />
-            ),
+            images: [
+              {
+                item: <img className="npoitem__img" src={npoFlue} alt="senatmed сенатмед"/>
+              }
+            ],
             model: 'Передвижной флюорограф',
-            description: (
+            itemDesc: (
               <>
                 Передвижные медицинские комплексы «Передвижной флюорограф»
                 ВМК-3033-01 на базе автобуса ПАЗ-32053 и ВМК-30331-01 на базе
@@ -2082,15 +2086,13 @@ export const MainList = [
                 alt="senatmed сенатмед"
               />
             ),
-            images: (
-              <img
-                className="npoitem__img"
-                src={npoMamm}
-                alt="senatmed сенатмед"
-              />
-            ),
+            images: [
+              {
+                item: <img className="npoitem__img" src={npoMamm} alt="senatmed сенатмед"/>
+              }
+            ],
             model: 'Передвижной маммограф',
-            description: (
+            itemDesc: (
               <>
                 Передвижные медицинские комплексы «Женское здоровье» ВМК-3033-02
                 на базе автобуса ПАЗ-32053 и ВМК-30331-02 на базе автобуса
@@ -2203,15 +2205,13 @@ export const MainList = [
                 alt="senatmed сенатмед"
               />
             ),
-            images: (
-              <img
-                className="npoitem__img"
-                src={urFlue}
-                alt="senatmed сенатмед"
-              />
-            ),
+            images: [
+              {
+                item: <img className="npoitem__img" src={urFlue} alt="senatmed сенатмед"/>
+              }
+            ],
             model: 'Передвижной флюорограф',
-            description: (
+            itemDesc: (
               <>
                 На шасси автомобилей, предназначен для обеспечения
                 рентгенографического обследования населения вне стационара в
@@ -2312,15 +2312,13 @@ export const MainList = [
                 alt="senatmed сенатмед"
               />
             ),
-            images: (
-              <img
-                className="npoitem__img"
-                src={urMamm}
-                alt="senatmed сенатмед"
-              />
-            ),
+            images: [
+              {
+                item: <img className="npoitem__img" src={urMamm} alt="senatmed сенатмед"/>
+              }
+            ],
             model: 'Передвижной маммограф',
-            description: (
+            itemDesc: (
               <>
                 На шасси автомобилей, предназначен для обеспечения
                 рентгенографического обследования населения вне стационара в
@@ -2414,7 +2412,11 @@ export const MainList = [
         ],
       },
     ],
-    rent: [
+  },
+  {
+    mainLink: '/catalog/rentgenologiya',
+    mainTitle: 'Рентгенология',
+    ctgItem: [
       {
         link: '/catalog/rentgenologiya/gelpik',
         img: (
@@ -3417,7 +3419,11 @@ export const MainList = [
         ],
       },
     ],
-    phiz: [
+  },
+  {
+    mainLink: '/catalog/phiziotherapy',
+    mainTitle: 'Реабилитация',
+    ctgItem: [
       {
         link: '/catalog/phiziotherapy/ortorent',
         img: (
@@ -6520,7 +6526,11 @@ export const MainList = [
         ],
       },
     ],
-    hirr: [
+  },
+  {
+    mainLink: '/catalog/hirurgiya',
+    mainTitle: 'Хирургия',
+    ctgItem: [
       {
         link: '/catalog/hirurgiya/fazzini',
         img: (
@@ -6695,7 +6705,11 @@ export const MainList = [
         ],
       },
     ],
-    ane: [
+  },
+  {
+    mainLink: '/catalog/anesteziology',
+    mainTitle: 'Анестезиология',
+    ctgItem: [
       {
         link: '/catalog/anesteziology/mindray',
         img: (
@@ -7522,7 +7536,11 @@ export const MainList = [
         ],
       },
     ],
-    furn: [
+  },
+  {
+    mainLink: '/catalog/furniture',
+    mainTitle: 'Медицинская мебель',
+    ctgItem: [
       {
         link: '/catalog/furniture/medicinoff',
         img: (

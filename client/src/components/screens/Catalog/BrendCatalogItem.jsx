@@ -1,10 +1,10 @@
-import ItemBg from "../../components/ui/ItemBg"
+import ItemBg from "../../ui/ItemBg"
 
-const UziCatalogItem = ({ list, title }) => {
-  document.title = `УЗИ-аппараты ${title} | Сенатмед`
+const BrendCatalogItem = ({ list, title }) => {
+  document.title = `${title} | Сенатмед`
   return (
     <>
-    <ItemBg title={`УЗИ-аппараты ${title}`} />
+    <ItemBg title={`${title}`} />
     <section className="uzi">
       <div className="container">
         <div className="uzi__inner">
@@ -13,10 +13,10 @@ const UziCatalogItem = ({ list, title }) => {
               return(
                 <li className="uzi__list-item" key={index}>
                   <a href={linkItem} className="uzi__item-pict">{img}</a>
-                  <h5 className="uzi__item-from">{from}</h5>
-                  <h2 className="uzi__item-title">{model}</h2>
+                  <h5 className="uzi__item-from">{from ? from : null}</h5>
+                  <h2 className="uzi__item-title">{model ? model : null}</h2>
                   <ul className="uzi__description-list" style={{marginTop: "10px"}}>
-                    {description}
+                    {description ? description : null}
                   </ul>
                   <button id="order-btn" className="uzi__order-btn">
                     <a href={linkItem}className="uzi__item-link">Подробнее</a>
@@ -32,4 +32,4 @@ const UziCatalogItem = ({ list, title }) => {
   )
 }
 
-export default UziCatalogItem
+export default BrendCatalogItem
