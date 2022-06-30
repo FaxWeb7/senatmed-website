@@ -80,6 +80,7 @@ const Mail = () => {
                   {...register('phone', {
                     required: "Поле обязательно к заполнению!",
                     pattern: {
+                      // eslint-disable-next-line
                       value: /^((8|\+7)[\- ]?)?(\(?\d{3}\)?[\- ]?)?[\d\- ]{7,10}$/,
                       message: 'Номер телефона введён некорректно'
                       } 

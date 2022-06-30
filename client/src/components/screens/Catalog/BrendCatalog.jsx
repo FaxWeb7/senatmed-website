@@ -1,4 +1,3 @@
-import { MainList } from "../../../utils/MainList"
 import ItemBg from "../../ui/ItemBg";
 
 const BrendCatalog = ({ ctgItem, mainTitle }) => {

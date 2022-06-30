@@ -50,7 +50,7 @@ const Offer = () => {
               <div className="offer__content" id="aos-anchor3">
                 <h2 className="offer__item-title">Операционные столы</h2>
                 <h3 className="offer__item-text">Компания «Сенатмед» реализует  медицинские столы для лечебно-диагностических организаций на выгодных условиях. У нас представлены модели практически под любую задачу, в том числе, палатные, прикроватные, процедурные, инструментальные и т.д.</h3>
-                <a href="/catalog" className="offer__item-link">
+                <a href="/catalog/furniture" className="offer__item-link">
                   подробнее
                   <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" className="bi bi-arrow-right" viewBox="0 0 16 16">
                     <path fillRule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z"/>

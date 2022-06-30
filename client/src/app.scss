@@ -1226,7 +1226,7 @@ h2 {
   font-size: 45px;
 }
 .partners__list-mini {
-  display: none;
+  display: none!important;
 }
 .partners__list {
   display: grid;
@@ -2698,11 +2698,12 @@ h2 {
     justify-content: center;
     margin-top: 5%;
     height: 140px;
+    display: block!important;
   }
   .partners__list-mini .slick-track {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: block;
+    display: block!important;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

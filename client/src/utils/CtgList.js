@@ -209,6 +209,7 @@ export const CtgList = [
     title: 'Ультразвуковая диагностика',
     titleItem: <>Ультразвуковая <br /> диагностика</>,
     description: 
+    // eslint-disable-next-line
     <h5 className="catalog-page-text" data-aos="zoom-in" data-aos-duration="1000"></h5> 
   },
   {
@@ -218,6 +219,7 @@ export const CtgList = [
     title: 'Рентгенология',
     titleItem: <>Рентгенология</>,
     description: 
+    // eslint-disable-next-line
     <h5 className="catalog-page-text" data-aos="zoom-in" data-aos-duration="1000"></h5> 
   },
   {
@@ -227,6 +229,7 @@ export const CtgList = [
     title: 'Анестезиология',
     titleItem: <>Анестезиология</>,
     description: 
+    // eslint-disable-next-line
     <h5 className="catalog-page-text" data-aos="zoom-in" data-aos-duration="1000"></h5> 
   },
   {
@@ -236,6 +239,7 @@ export const CtgList = [
     title: 'Медицинская мебель',
     titleItem: <>Медицинская мебель</>,
     description: 
+    // eslint-disable-next-line
     <h5 className="catalog-page-text" data-aos="zoom-in" data-aos-duration="1000"></h5> 
   },
   {
@@ -245,6 +249,7 @@ export const CtgList = [
     title: 'Пульмонология',
     titleItem: <>Пульмонология</>,
     description: 
+    // eslint-disable-next-line
     <h5 className="catalog-page-text" data-aos="zoom-in" data-aos-duration="1000"></h5> 
   },
 ]

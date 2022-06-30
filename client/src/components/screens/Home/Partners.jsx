@@ -1,6 +1,6 @@
 import phillips from '../../../assets/partners/phillips.webp'
 import siemens from '../../../assets/partners/siemens.webp'
-import healthcare from '../../../assets/partners/phillips.webp'
+import healthcare from '../../../assets/partners/healthcare.webp'
 import mindray from '../../../assets/partners/mindray.webp'
 import samsung from '../../../assets/partners/samsung.webp'
 import medrad from '../../../assets/partners/medrad.webp'
