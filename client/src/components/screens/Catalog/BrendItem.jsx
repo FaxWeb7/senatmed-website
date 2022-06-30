@@ -10,7 +10,7 @@ import pre0 from '../../../assets/catalog/rentgenologiya/gelpik/pre0.png';
 import { useOutside } from "../../../hooks/useOutside";
 import ItemBg from "../../ui/ItemBg";
 
-const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis, pre, price, ob, gallery }) => {
+const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis, pre, price, ob, gallery, custom }) => {
   document.title = `${model} | Сенатмед`;
   document.querySelector('meta[name="description"]').content = `${model} ООО "Сенатмед"`;
   document.querySelector('meta[name="keywords"]').content = ` ${model}  медицина, сенатмед`
@@ -139,6 +139,14 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
                     </li>
                     )}
                   )}
+              </ul>
+            </div>
+          )}
+          {custom !== null &&(
+            <div className="tech">
+              <h1 className="tech__title">{custom.title}</h1>
+              <ul className="tech__list">
+                {custom.text}
               </ul>
             </div>
           )}

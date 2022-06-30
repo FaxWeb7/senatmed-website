@@ -34,9 +34,9 @@ root.render(
                 {ctgItem.map(({link, list, antitle}, index) => {
                   return(
                     <Fragment key={index}> 
-                      {list.map(({ linkItem, images, model, subtitleItem, itemDesc, ob, gallery, oss, slider, tech, vis, pre, price }, index) => {
+                      {list.map(({ linkItem, images, model, subtitleItem, itemDesc, ob, gallery, oss, slider, tech, vis, pre, price, custom }, index) => {
                         return(
-                            <Route key={index} path={linkItem} element={<BrendItem images={images ? images : null} model={model ? model : null} subtitleItem={subtitleItem ? subtitleItem : null} itemDesc={itemDesc ? itemDesc : null} oss={oss ? oss : null} tech={tech ? tech : null} vis={vis ? vis : null} pre={pre ? pre : null} slider={slider ? slider : null} price={price ? price : null} ob={ob ? ob : null} gallery={gallery ? gallery : null} />} exact/>
+                            <Route key={index} path={linkItem} element={<BrendItem images={images ? images : null} model={model ? model : null} subtitleItem={subtitleItem ? subtitleItem : null} itemDesc={itemDesc ? itemDesc : null} oss={oss ? oss : null} tech={tech ? tech : null} vis={vis ? vis : null} pre={pre ? pre : null} slider={slider ? slider : null} price={price ? price : null} ob={ob ? ob : null} gallery={gallery ? gallery : null} custom={custom ? custom : null} />} exact/>
                         )
                       })}
                       <Route key={index} path={link} element={<BrendCatalogItem list={list} title={`${mainTitle} ${antitle}`} />} exact/>

@@ -12,6 +12,7 @@ import uzi from '../assets/catalog/uzi.webp'
 import rent from '../assets/catalog/rent.png'
 import ana from '../assets/catalog/ana.jpg'
 import furn from '../assets/catalog/furn.jpg'
+import pulm from '../assets/catalog/pulm.jpg'
 
 export const CtgList = [
   {
@@ -234,6 +235,15 @@ export const CtgList = [
     imgItem: <img className="catalog-page-img" src={furn} alt="сенатмед senatmed" />,
     title: 'Медицинская мебель',
     titleItem: <>Медицинская мебель</>,
+    description: 
+    <h5 className="catalog-page-text" data-aos="zoom-in" data-aos-duration="1000"></h5> 
+  },
+  {
+    link: "/catalog/pulmonology",
+    img: <img className="catalog__item-img" src={pulm} alt="сенатмед senatmed" />,
+    imgItem: <img className="catalog-page-img" src={pulm} alt="сенатмед senatmed" />,
+    title: 'Пульмонология',
+    titleItem: <>Пульмонология</>,
     description: 
     <h5 className="catalog-page-text" data-aos="zoom-in" data-aos-duration="1000"></h5> 
   },
