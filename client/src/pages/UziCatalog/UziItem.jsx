@@ -3,10 +3,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import './scss/uziitem.scss'
 import pre0 from '../../assets/catalog/rentgenologiya/gelpik/pre0.png';
-// import { useOutside } from "../../hooks/useOutside";
-import { useState } from 'react';
-import { Modal } from 'react-bootstrap'
-
+import { useOutside } from "../../hooks/useOutside";
 
 const UziItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis, pre }) => {
   document.title = `${model} | Сенатмед`;
@@ -45,42 +42,26 @@ const UziItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis
     ]
   };
 
-  const [show, setShow] = useState(false);
-  const handleClose = () => setShow(false);
-  const handleShow = () => setShow(true);
+  const {ref, isShow, setIsShow} = useOutside(false)
   
   return (
     <>
       {/* <ItemBg title=""></ItemBg> */}
-      <div className="modal">
-
-        <Modal show={show} onHide={handleClose} >
-          <Modal.Header closeButton>
-            <Modal.Title>{model}</Modal.Title>
-          </Modal.Header>
-            <Modal.Body >
-              <Slider {...settings} className="uzi-item-slider">
-                {images.map(({item}, index) => {
-                  return(
-                    <li className="uzi-item-slider-item" onClick={handleShow} key={index}>{item}</li>
-                  )
-                })}
-              </Slider>
-            </Modal.Body>
-          <Modal.Footer>
-          </Modal.Footer>
-        </Modal>
-      </div>
+      {isShow && (
+        <div className="modal">
+          {/* <h1>hi</h1> */}
+        </div>
+      )}
       <section className="uzi-item">
         <div className="min-uzi-container">
           <div className="uzi-item__inner">
             <div className="uzi-item-content">
               <div className="uzi-slider-wrapper">
                 <div className="slider-wrapper">
-                  <Slider {...settings} className="uzi-item-slider">
+                  <Slider {...settings} className="uzi-item-slider" ref={ref}>
                     {images.map(({item}, index) => {
                       return(
-                        <li className="uzi-item-slider-item" onClick={handleShow} key={index}>{item}</li>
+                        <li className="uzi-item-slider-item" onClick={() => setIsShow(!isShow)} key={index}>{item}</li>
                       )
                     })}
                   </Slider>

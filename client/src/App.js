@@ -1,5 +1,5 @@
 import AOS from 'aos';
-import './app.css'
+import './app.scss'
 import Header from './components/screens/Home/Header';
 import Footer from './components/screens/Home/Footer';
 import Mail from './components/screens/Home/Mail';

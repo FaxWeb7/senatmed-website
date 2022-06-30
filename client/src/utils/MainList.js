@@ -2012,7 +2012,7 @@ export const MainList = [
                 alt="senatmed сенатмед"
               />
             ),
-            imgItem: (
+            images: (
               <img
                 className="npoitem__img"
                 src={npoFlue}
@@ -2082,7 +2082,7 @@ export const MainList = [
                 alt="senatmed сенатмед"
               />
             ),
-            imgItem: (
+            images: (
               <img
                 className="npoitem__img"
                 src={npoMamm}
@@ -2203,7 +2203,7 @@ export const MainList = [
                 alt="senatmed сенатмед"
               />
             ),
-            imgItem: (
+            images: (
               <img
                 className="npoitem__img"
                 src={urFlue}
@@ -2312,7 +2312,7 @@ export const MainList = [
                 alt="senatmed сенатмед"
               />
             ),
-            imgItem: (
+            images: (
               <img
                 className="npoitem__img"
                 src={urMamm}

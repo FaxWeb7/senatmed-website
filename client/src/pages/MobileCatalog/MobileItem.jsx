@@ -1,7 +1,7 @@
 import "./scss/mobileitem.scss";
 import ItemBg from "../../components/ui/ItemBg";
 
-const MobileItem = ({ model, img, description, ob, gallery }) => {
+const MobileItem = ({ model, images, description, ob, gallery }) => {
   document.title = `${model} | Сенатмед`;
   document.querySelector('meta[name="description"]').content = `${model} ООО "Сенатмед"`;
   document.querySelector('meta[name="keywords"]').content = `мобильные кабинеты, ${model}  медицина, мобильные комплексы`
@@ -12,7 +12,7 @@ const MobileItem = ({ model, img, description, ob, gallery }) => {
         <div className="container">
           <div className="npoitem__inner">
             <div className="npoitem__top">
-              {img}
+              {images}
               <div className="npoitem__content">
                 <h1 className="npoitem__title">Описание</h1>
                 <p className="npoitem__text">{description}</p>
