@@ -7,7 +7,6 @@ import './scss/mobileitem.scss'
 import './scss/uziitem.scss'
 import './scss/rencatalog.scss'
 import pre0 from '../../../assets/catalog/rentgenologiya/gelpik/pre0.png';
-import { useOutside } from "../../../hooks/useOutside";
 import ItemBg from "../../ui/ItemBg";
 
 const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis, pre, price, ob, gallery, custom }) => {
@@ -46,7 +45,6 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
       }
     ]
   };
-  const {ref, isShow, setIsShow} = useOutside(false)
 
   return (
     <>
@@ -57,10 +55,10 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
           <div className="uzi-item-content">
             <div className="uzi-slider-wrapper">
               <div className="slider-wrapper">
-                <Slider {...settings} className="uzi-item-slider" ref={ref}>
+                <Slider {...settings} className="uzi-item-slider">
                   {images.map(({item}, index) => {
                     return(
-                      <li className="uzi-item-slider-item" onClick={() => setIsShow(!isShow)} key={index}>{item}</li>
+                      <li className="uzi-item-slider-item"  key={index}>{item}</li>
                     )
                   })}
                 </Slider>
