@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form'
+import { SERVER_URL } from '../../../constants';
 
 const Mail = () => {
   const {isChecked, setIsChecked} = useState(true)
