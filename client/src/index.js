@@ -13,7 +13,7 @@ import { MainList } from './utils/MainList';
 import { Fragment } from 'react'
 import BrendItem from './components/screens/Catalog/BrendItem';
 import BrendCatalogItem from './components/screens/Catalog/BrendCatalogItem';
-import BrendCatalog from './components/screens/Catalog/BrendCatalog';
+import BrendCatalog from './components/screens/Catalog/BrendCatalog'; 
 
 
 const root = ReactDOM.createRoot(document.getElementById('app'));
