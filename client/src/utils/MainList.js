@@ -434,6 +434,13 @@ import lfh10a4 from '../assets/catalog/pulm/atmung/lfh10a4.jpg'
 import nellcor from '../assets/catalog/pulm/nellcor/nellcor.png'
 import benn from '../assets/catalog/pulm/nellcor/benn.jpg'
 import npb840 from '../assets/catalog/pulm/nellcor/npb840.jpg'
+import inct from '../assets/catalog/tomography/phillips/inct.webp'
+import inct2 from '../assets/catalog/tomography/phillips/inct2.webp'
+import inct3 from '../assets/catalog/tomography/phillips/inct3.webp'
+import inct4 from '../assets/catalog/tomography/phillips/inct4.webp'
+import inct5 from '../assets/catalog/tomography/phillips/inct5.webp'
+import inct6 from '../assets/catalog/tomography/phillips/inct6.webp'
+import inct7 from '../assets/catalog/tomography/phillips/inct7.webp'
 
 export const MainList = [
   {
@@ -9533,6 +9540,132 @@ export const MainList = [
                 el: 'Давление вдоха (PI): 5-90 см Н2О;'
               },
             ]
+          },
+        ],
+      },
+    ],
+  },
+  {
+    mainLink: '/catalog/tomographiya',
+    mainTitle: 'Компьютерная томография',
+    ctgItem: [
+      {
+        link: '/catalog/tomographiya/phillips',
+        img: (
+          <img
+            className="catalog__item-img"
+            src={phillips}
+            alt="сенатмед senatmed"
+          />
+        ),
+        antitle: 'Phillips',
+        list: [
+          {
+            linkItem: '/catalog/tomographiya/phillips/incisive',
+            img: (
+              <img
+                className="uzi__item-img"
+                src={inct}
+                alt="senatmed сенатмед"
+              />
+            ),
+            model: 'Incisive CT',
+            description: (
+              <>
+                <li className="uzi__description-item">
+                Мощная рентгеновская трубка vMRC с инновационной картой SmartCard
+                </li>
+                <li className="uzi__description-item">
+                Система фоновой подсветки гентри
+                </li>
+                <li className="uzi__description-item">
+                Низкодозовый режим сканирования 70 кВ
+                </li>
+                <li className="uzi__description-item">
+                Подавление артефактов от металлических объектов O-MAR
+                </li>
+                <li className="uzi__description-item">
+                Скорость движения стола: 300 мм/сек
+                </li>
+                <li className="uzi__description-item">
+                Время оборота рентгеновской трубки: 0,35 сек
+                </li>
+              </>
+            ),
+            images: [
+              {
+                item: <img src={inct} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={inct2} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={inct3} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={inct4} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={inct5} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={inct6} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={inct7} alt="senatmed Сенатмед" />,
+              },
+            ],
+            price: '',
+            itemDesc: (
+              <>
+                <b>64/128-срезовый компьютерный томограф</b><br /><br />
+                Incisive CT – новый аппарат в линейке КТ PHILIPS – это экономичное решение, широкие функциональные возможности, современный дизайн и новые сенсорные панели, разработанные операторами для операторов.
+              </>
+            ),
+            tech: [
+              {
+                el: 'Мощная рентгеновская трубка vMRC с инновационной картой SmartCard;',
+              },
+              {
+                el: 'Система фоновой подсветки гентри в зависимости от типа исследования;',
+              },
+              {
+                el: 'Низкодозовый режим сканирования 70 кВ;',
+              },
+              {
+                el: 'Инновационные контроллеры OnPlan;',
+              },
+              {
+                el: 'Подавление артефактов от металлических объектов O-MAR;',
+              },
+              {
+                el: 'Улучшение качества изображение и предотвращение артефактов с iDose;',
+              },
+              {
+                el: 'Апертура гентри: 72 см'
+              },
+              {
+                el: 'Грузоподъемность стола: 205 кг;',
+              },
+              {
+                el: 'Скорость движения стола: 300 мм/сек;',
+              },
+              {
+                el: 'Время оборота рентгеновской трубки: 0,35 сек.',
+              },
+              {
+                el: 'Исследования легких и сканирование крупных пациентов;',
+              },
+              {
+                el: 'Базовые возможности обработки изображений с перспективой апгрейда аппарата;',
+              },
+              {
+                el: 'Рутинная визуализация при минимальных затратах;',
+              },
+              {
+                el: 'Экспертные кардиоисследования.',
+              },
+            ],
           },
         ],
       },
