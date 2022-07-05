@@ -483,7 +483,7 @@ export const MainList = [
         link: '/catalog/uzi-apparats/phillips',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={phillips}
             alt="сенатмед senatmed"
           />
@@ -1097,7 +1097,7 @@ export const MainList = [
         link: '/catalog/uzi-apparats/ru-scan',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={ruScan}
             alt="сенатмед senatmed"
           />
@@ -1736,7 +1736,7 @@ export const MainList = [
         link: '/catalog/uzi-apparats/samsung',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={samsung}
             alt="сенатмед senatmed"
           />
@@ -1969,7 +1969,7 @@ export const MainList = [
         link: '/catalog/uzi-apparats/hitachi',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={hitachi}
             alt="сенатмед senatmed"
           />
@@ -2052,7 +2052,7 @@ export const MainList = [
         link: '/catalog/mobile-complex/npoauto',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={npoLogo}
             alt="сенатмед senatmed"
           />
@@ -2251,7 +2251,7 @@ export const MainList = [
         link: '/catalog/mobile-complex/uralrentgen',
         img: (
           <img
-            className="catalog__item-img ur"
+            className="catalog__item-img ctgi ur"
             src={urLogo}
             alt="сенатмед senatmed"
           />
@@ -2495,7 +2495,7 @@ export const MainList = [
         link: '/catalog/rentgenologiya/gelpik',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={gelpLogo}
             alt="сенатмед senatmed"
           />
@@ -3502,7 +3502,7 @@ export const MainList = [
         link: '/catalog/phiziotherapy/ortorent',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={ortorentLogo}
             alt="сенатмед senatmed"
           />
@@ -5198,7 +5198,7 @@ export const MainList = [
         link: '/catalog/phiziotherapy/cosyma',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={cosyma}
             alt="сенатмед senatmed"
           />
@@ -5442,7 +5442,7 @@ export const MainList = [
         link: '/catalog/phiziotherapy/beka-rus',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={beka}
             alt="сенатмед senatmed"
           />
@@ -6470,7 +6470,7 @@ export const MainList = [
         link: '/catalog/phiziotherapy/orbita',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={orbita}
             alt="сенатмед senatmed"
           />
@@ -6609,7 +6609,7 @@ export const MainList = [
         link: '/catalog/hirurgiya/fazzini',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={logo}
             alt="сенатмед senatmed"
           />
@@ -6788,7 +6788,7 @@ export const MainList = [
         link: '/catalog/anesteziology/mindray',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={ane}
             alt="сенатмед senatmed"
           />
@@ -7255,7 +7255,7 @@ export const MainList = [
         link: '/catalog/anesteziology/bionet',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={bionet}
             alt="сенатмед senatmed"
           />
@@ -7619,7 +7619,7 @@ export const MainList = [
         link: '/catalog/furniture/medicinoff',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={medicinoff}
             alt="сенатмед senatmed"
           />
@@ -8043,7 +8043,7 @@ export const MainList = [
         link: '/catalog/furniture/promet',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={promet}
             alt="сенатмед senatmed"
           />
@@ -8354,7 +8354,7 @@ export const MainList = [
         link: '/catalog/furniture/megi',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={megi}
             alt="сенатмед senatmed"
           />
@@ -8603,7 +8603,7 @@ export const MainList = [
         link: '/catalog/furniture/dzmo',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={dzmo}
             alt="сенатмед senatmed"
           />
@@ -8933,7 +8933,7 @@ export const MainList = [
         link: '/catalog/pulmonology/lifecore',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={life}
             alt="сенатмед senatmed"
           />
@@ -9114,7 +9114,7 @@ export const MainList = [
         link: '/catalog/pulmonology/atmung',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={atmung}
             alt="сенатмед senatmed"
           />
@@ -9361,7 +9361,7 @@ export const MainList = [
         link: '/catalog/pulmonology/nellcor',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={nellcor}
             alt="сенатмед senatmed"
           />
@@ -9585,7 +9585,7 @@ export const MainList = [
         link: '/catalog/tomographiya/phillips',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={phillips}
             alt="сенатмед senatmed"
           />
@@ -9864,7 +9864,7 @@ export const MainList = [
         link: '/catalog/tomographiya/canon',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={canon}
             alt="сенатмед senatmed"
           />
@@ -10350,7 +10350,7 @@ export const MainList = [
         link: '/catalog/tomographiya/siemens',
         img: (
           <img
-            className="catalog__item-img"
+            className="catalog__item-img ctgi"
             src={siemens}
             alt="сенатмед senatmed"
           />
