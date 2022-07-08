@@ -1,4 +1,5 @@
 import ItemBg from "../../ui/ItemBg"
+import { Link } from 'react-router-dom'
 
 const BrendCatalogItem = ({ list, title }) => {
   document.title = `${title} | Сенатмед`
@@ -12,14 +13,14 @@ const BrendCatalogItem = ({ list, title }) => {
             {list.map(({ linkItem, img, from, model, description  }, index) => {
               return(
                 <li className="uzi__list-item" key={index}>
-                  <a href={linkItem} className="uzi__item-pict">{img}</a>
+                  <Link to={`${linkItem}`} className="uzi__item-pict">{img}</Link>
                   <h5 className="uzi__item-from">{from ? from : null}</h5>
                   <h2 className="uzi__item-title">{model ? model : null}</h2>
                   <ul className="uzi__description-list" style={{marginTop: "10px"}}>
                     {description ? description : null}
                   </ul>
                   <button id="order-btn" className="uzi__order-btn">
-                    <a href={linkItem}className="uzi__item-link">Подробнее</a>
+                    <Link to={`${linkItem}`} className="uzi__item-link">Подробнее</Link>
                   </button>
                 </li>
               )
