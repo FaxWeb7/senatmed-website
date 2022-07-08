@@ -57,9 +57,22 @@
   @media(max-width: 500px){
     &__item{
       gap: 15px;
+      flex-direction: column;
+      align-items: center;
+      &-content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .fl__item-title{
+          text-align: center;
+        }
+        .fl__text{
+          text-align: center;
+        }
+      }
     }
     &__list{
-      gap: 30px;
+      gap: 45px;
     }
     &__img{
       width: 75px;

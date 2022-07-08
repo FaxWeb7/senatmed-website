@@ -13,6 +13,7 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
   document.title = `${model} | Сенатмед`;
   document.querySelector('meta[name="description"]').content = `${model} ООО "Сенатмед"`;
   document.querySelector('meta[name="keywords"]').content = ` ${model}  медицина, сенатмед`
+  window.scrollTo({ top: 0, behavior: 'auto' })
   const settings = {
     dots: true,
     arrows: false,

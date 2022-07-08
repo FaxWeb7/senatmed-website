@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 
 const BrendCatalogItem = ({ list, title }) => {
   document.title = `${title} | Сенатмед`
+  window.scrollTo({ top: 0, behavior: 'auto' })
   return (
     <>
     <ItemBg title={`${title}`} />

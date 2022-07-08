@@ -1,1 +1,1 @@
-export const SERVER_URL = "http://senatmed.ru:5000"
+export const SERVER_URL = "http://62.113.96.119:5000"

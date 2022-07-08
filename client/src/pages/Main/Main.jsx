@@ -5,6 +5,8 @@ import Range from '../../components/screens/Home/Range'
 import Top from '../../components/screens/Home/Top'
 
 const Main = () => {
+  window.scrollTo({ top: 0, behavior: 'auto' })
+  document.title = "Сенатмед | продажа медицинского оборудования"
   return (
     <>
       <Top />

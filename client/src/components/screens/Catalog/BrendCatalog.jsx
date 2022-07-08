@@ -5,6 +5,7 @@ const BrendCatalog = ({ ctgItem, mainTitle }) => {
   document.title = `${mainTitle} | Сенатмед`
   document.querySelector('meta[name="description"]').content = document.title;
   document.querySelector('meta[name="keywords"]').content = `медицина, ${mainTitle}, сенатмед, senatmed`;
+  window.scrollTo({ top: 0, behavior: 'auto' })
   return (
     <>
       <ItemBg title="Выберите бренд" />

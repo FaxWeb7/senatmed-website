@@ -1,6 +1,6 @@
 const ItemBg = ({ title }) => {
   return (
-    <section className="top-ctg ctg-page-background">
+    <section className="top-ctg ctg-page-background" id="bg">
       <div className="bg"></div>
       <div className="container">
         <div className="top-ctg__inner">

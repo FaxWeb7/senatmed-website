@@ -1,5 +1,6 @@
 const Privacy = () => {
   document.title = "Политика конфиденциальности | Сенатмед"
+  window.scrollTo({ top: 0, behavior: 'auto' })
   return (
     <section className="privacy">
       <div className="container">

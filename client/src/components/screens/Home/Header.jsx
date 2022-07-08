@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import Logo from '../../../assets/icons/senatmed-logo.webp';
 
 const Header = () => {
@@ -27,10 +28,10 @@ const Header = () => {
         <div className="container">
           <div className="header__inner">
             <div className="header__logo">
-              <a href="/"><img src={Logo} alt="senatmed Сенатмед" /></a> 
+              <Link to="/"><img src={Logo} alt="senatmed Сенатмед" /></Link> 
             </div>
             <div className="header__catalog">
-              <a className="header__catalog-link" href="/catalog">каталог</a>
+              <Link className="header__catalog-link" to="/catalog">каталог</Link>
             </div>
             <div className="header__mobile-nav">
               <span className="header__mobile-text">Выбрать страницу</span>
@@ -44,9 +45,9 @@ const Header = () => {
               </span>
               <ul className="header__mobile-list">
                 <div className="header__li-wrapper">
-                  <li className="header__mobile-item"><a className="header__mobile-link" href="/catalog">каталог</a></li>
-                  <li className="header__mobile-item"><a className="header__mobile-link" href="/terms-of-use">пользовательское соглашение</a></li>
-                  <li className="header__mobile-item"><a className="header__mobile-link" href="/privacy-policy">политика конфиденциальности</a></li>
+                  <li className="header__mobile-item"><Link className="header__mobile-link" to="/catalog">каталог</Link></li>
+                  <li className="header__mobile-item"><Link className="header__mobile-link" to="/terms-of-use">пользовательское соглашение</Link></li>
+                  <li className="header__mobile-item"><Link className="header__mobile-link" to="/privacy-policy">политика конфиденциальности</Link></li>
                 </div>
               </ul>
             </div>

@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { useForm } from 'react-hook-form'
+import { Link } from 'react-router-dom';
 import { SERVER_URL } from '../../../constants';
 
 const Mail = () => {
@@ -103,8 +104,8 @@ const Mail = () => {
             </div>
           </div>
           <div className="mail__copyright">
-            <h4><a href={"/terms-of-use"} className="mail__link">пользовательское соглашение</a></h4>
-            <h4><a href={"/privacy-policy"} className="mail__link">политика конфиденциальности</a></h4>
+            <h4><Link to={"/terms-of-use"} className="mail__link">пользовательское соглашение</Link></h4>
+            <h4><Link to={"/privacy-policy"} className="mail__link">политика конфиденциальности</Link></h4>
           </div>
         </div>
       </div>

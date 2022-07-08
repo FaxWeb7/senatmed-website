@@ -1,5 +1,6 @@
 const Terms = () => {
   document.title = "Пользовательское соглашение | Сенатмед";
+  window.scrollTo({ top: 0, behavior: 'auto' })
   return (
     <section className="terms">
       <div className="container">
