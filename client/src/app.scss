@@ -1228,6 +1228,10 @@ h2 {
 .partners__list-mini {
   display: none!important;
 }
+.partners__list-item{
+  align-items: center;
+  display: flex!important;
+}
 .partners__list {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -2706,7 +2710,8 @@ h2 {
   .partners__list-mini .slick-track {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: block!important;
+    display: flex!important;
+    gap: 25px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;

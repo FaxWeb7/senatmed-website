@@ -7,8 +7,6 @@ import medrad from '../../../assets/partners/medrad.webp'
 import italray from '../../../assets/partners/italray.webp'
 import medonica from '../../../assets/partners/medonica.webp'
 import sanosite from '../../../assets/partners/sonosite.webp'
-import hologic from '../../../assets/partners/hologic.webp'
-import xstrahl from '../../../assets/partners/xstrahl.webp'
 import olympus from '../../../assets/partners/olympus.webp'
 import renmedprom from '../../../assets/partners/renmedprom.webp'
 import drager from '../../../assets/partners/drager.webp'
@@ -18,7 +16,22 @@ import storz from '../../../assets/partners/storz.webp'
 import medin from '../../../assets/partners/medin.webp'
 import mrt from '../../../assets/partners/mrp.webp'
 import topcon from '../../../assets/partners/topcon.webp'
-import merivaara from '../../../assets/partners/merivaara.webp'
+import fazzini from '../../../assets/partners/fazzini.webp'
+import bionet from '../../../assets/partners/bionet.jpg'
+import canon from '../../../assets/partners/canon.jpg'
+import ortorent from '../../../assets/partners/ortorent.png'
+import cosyma from '../../../assets/partners/cosyma.png'
+import beka from '../../../assets/partners/beka.png'
+import ur from '../../../assets/partners/ur.png'
+import life from '../../../assets/partners/life.png'
+import atmung from '../../../assets/partners/atmung.jpg'
+import nellcor from '../../../assets/partners/nellcor.jpg'
+import medicinoff from '../../../assets/partners/medicinoff.jpg'
+import promet from '../../../assets/partners/promet.jpg'
+import megi from '../../../assets/partners/megi.jpg'
+import dzmo from '../../../assets/partners/dzmo.jpg'
+import hitachi from '../../../assets/catalog/uzi/hitachi/logo.png'
+import scaner from '../../../assets/partners/scaner.jpg'
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
@@ -48,8 +61,6 @@ const Partners = () => {
             <li className="partners__list-item"><img className="partners__list-img" src={italray} alt="senatmed сенатмед" /></li>
             <li className="partners__list-item"><img className="partners__list-img" src={medonica} alt="senatmed сенатмед" /></li>
             <li className="partners__list-item"><img className="partners__list-img" src={sanosite} alt="senatmed сенатмед" /></li>
-            <li className="partners__list-item"><img className="partners__list-img" src={hologic} alt="senatmed сенатмед" /></li>
-            <li className="partners__list-item"><img className="partners__list-img" src={xstrahl} alt="senatmed сенатмед" /></li>
             <li className="partners__list-item"><img className="partners__list-img" src={olympus} alt="senatmed сенатмед" /></li>
             <li className="partners__list-item"><img className="partners__list-img" src={renmedprom} alt="senatmed сенатмед" /></li>
             <li className="partners__list-item"><img className="partners__list-img" src={drager} alt="senatmed сенатмед" /></li>
@@ -59,7 +70,22 @@ const Partners = () => {
             <li className="partners__list-item"><img className="partners__list-img" src={medin} alt="senatmed сенатмед" /></li>
             <li className="partners__list-item"><img className="partners__list-img" src={mrt} alt="senatmed сенатмед" /></li>
             <li className="partners__list-item"><img className="partners__list-img" src={topcon} alt="senatmed сенатмед" /></li>
-            <li className="partners__list-item"><img className="partners__list-img" src={merivaara} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={fazzini} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={bionet} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={canon} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={ortorent} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={cosyma} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={beka} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={ur} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={life} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={atmung} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={nellcor} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={medicinoff} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={promet} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={megi} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={dzmo} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={hitachi} alt="senatmed сенатмед" /></li>
+            <li className="partners__list-item"><img className="partners__list-img" src={scaner} alt="senatmed сенатмед" /></li>
           </ul>
         </div>
         <Slider {...settings} className="partners__list-mini">
@@ -72,8 +98,6 @@ const Partners = () => {
           <li className="partners__list-item"><img className="partners__list-img" src={italray} alt="senatmed сенатмед" /></li>
           <li className="partners__list-item"><img className="partners__list-img" src={medonica} alt="senatmed сенатмед" /></li>
           <li className="partners__list-item"><img className="partners__list-img" src={sanosite} alt="senatmed сенатмед" /></li>
-          <li className="partners__list-item"><img className="partners__list-img" src={hologic} alt="senatmed сенатмед" /></li>
-          <li className="partners__list-item"><img className="partners__list-img" src={xstrahl} alt="senatmed сенатмед" /></li>
           <li className="partners__list-item"><img className="partners__list-img" src={olympus} alt="senatmed сенатмед" /></li>
           <li className="partners__list-item"><img className="partners__list-img" src={renmedprom} alt="senatmed сенатмед" /></li>
           <li className="partners__list-item"><img className="partners__list-img" src={drager} alt="senatmed сенатмед" /></li>
@@ -83,7 +107,22 @@ const Partners = () => {
           <li className="partners__list-item"><img className="partners__list-img" src={medin} alt="senatmed сенатмед" /></li>
           <li className="partners__list-item"><img className="partners__list-img" src={mrt} alt="senatmed сенатмед" /></li>
           <li className="partners__list-item"><img className="partners__list-img" src={topcon} alt="senatmed сенатмед" /></li>
-          <li className="partners__list-item"><img className="partners__list-img" src={merivaara} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={fazzini} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={bionet} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={canon} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={ortorent} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={cosyma} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={beka} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={ur} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={life} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={atmung} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={nellcor} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={medicinoff} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={promet} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={megi} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={dzmo} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={hitachi} alt="senatmed сенатмед" /></li>
+          <li className="partners__list-item"><img className="partners__list-img" src={scaner} alt="senatmed сенатмед" /></li>
         </Slider>
       </div>
     </section>
