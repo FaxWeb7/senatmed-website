@@ -6,7 +6,7 @@ import Top from '../../components/screens/Home/Top'
 
 const Main = () => {
   window.scrollTo({ top: 0, behavior: 'auto' })
-  document.title = "Сенатмед - Продажа медицинского оборудования"
+  document.title = "Сенатмед - вершины медицинской эволюции"
   return (
     <>
       <Top />
