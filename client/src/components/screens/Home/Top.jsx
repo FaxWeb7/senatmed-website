@@ -13,7 +13,7 @@ const Top = () => {
             <img src={logo} width="530px" alt="senatmed сенатмед" />
           </div>
           <div className="top__title">
-            <h1 className="top__title-text">продажа медицинского оборудования</h1>
+            <h5 className="top__title-text">продажа медицинского оборудования</h5>
           </div>
           <div className="top__button">
             <Link className="top__button-link" to={"/catalog"}>
