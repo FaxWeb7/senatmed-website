@@ -19,7 +19,7 @@ app.listen(process.env.PORT || 5000,  (error) => {
 
 app.use(morgan(reqMsg(':method :url :status :res[content-length] - :response-time ms'))); 
 app.use(methodOverride('_method'));
-app.use(express.urlencoded({extended: false})); 
+app.use(express.urlencoded({extended: false}));
 
 app.post('/api/sendmail', (req, res) => {
   const { message } = req.body;
