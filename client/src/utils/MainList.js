@@ -472,6 +472,17 @@ import somatomup2 from '../assets/catalog/tomography/siemens/somatomup2.webp'
 import somatomup3 from '../assets/catalog/tomography/siemens/somatomup3.webp'
 import somatomup4 from '../assets/catalog/tomography/siemens/somatomup4.webp'
 import somatomup5 from '../assets/catalog/tomography/siemens/somatomup5.webp'
+import neuroLogo from '../assets/catalog/phiz/neurocor/logo.svg'
+import balf1 from '../assets/catalog/phiz/neurocor/balf1.png'
+import balf2 from '../assets/catalog/phiz/neurocor/balf2.png'
+import balf3 from '../assets/catalog/phiz/neurocor/balf3.png'
+import balf4 from '../assets/catalog/phiz/neurocor/balf4.png'
+import acsmaLogo from '../assets/catalog/phiz/acsma/logo.svg'
+import prak1 from '../assets/catalog/phiz/acsma/prak1.png'
+import prak2 from '../assets/catalog/phiz/acsma/prak2.gif'
+import prak3 from '../assets/catalog/phiz/acsma/prak3.gif'
+import prak4 from '../assets/catalog/phiz/acsma/prak4.gif'
+
 
 export const MainList = [
   {
@@ -6593,6 +6604,185 @@ export const MainList = [
               },
               {
                 el: 'Анализ и контроль эффективности лечения',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        link: '/catalog/phiziotherapy/neurokor',
+        img: (
+          <img
+            className="catalog__item-img ctgi"
+            src={neuroLogo}
+            alt="сенатмед senatmed"
+          />
+        ),
+        antitle: 'Неврокор',
+        list: [
+          {
+            linkItem: '/catalog/phiziotherapy/neurokor/balfit',
+            img: (
+              <img
+                className="uzi__item-img"
+                src={balf1}
+                alt="senatmed сенатмед"
+              />
+            ),
+            model: 'Тренажер баланса Балфит',
+            description: (
+              <>
+                <li className="uzi__description-item">
+                  Регистрация углов наклона
+                </li>
+                <li className="uzi__description-item">
+                  Тренировки в сагитальной плоскости
+                </li>
+                <li className="uzi__description-item">
+                  Тренировки в фронтальной плоскости
+                </li>
+              </>
+            ),
+            images: [
+              {
+                item: <img src={balf1} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={balf2} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={balf3} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={balf4} alt="senatmed Сенатмед" />,
+              },
+            ],
+            itemDesc: (
+              <>
+                Тренажер баланса «Балфит» предназначен для проведения тренировок функции равновесия и улучшение координации движений с использованием БОС.
+                <br /><br />
+                Основой комплекса является биомеханический сенсор «Бисенс» с высокоточной регистрацией углов наклона и определением пространственного положения.
+                <br /><br />
+                Тренажер баланса применяется при заболеваниях центральной и периферической нервной системы, опорно-двигательного аппарата. Значительно улучшает координацию движений, постуральную стабильность и управление центром тяжести
+              </>
+            ),
+            price: 'цена по запросу',
+            pre: null,
+            tech: [
+              {
+                el: 'Тренировки в 2-х плоскостях – сагиттальная, фронтальная.',
+              },
+              {
+                el: 'Возможна установка ограничений для тренировки только в одной плоскости.',
+              },
+              {
+                el: 'Высокоточной регистрацией углов наклона и определением пространственного положения.',
+              },
+              {
+                el: 'Регулируемая степень жесткости платформы.',
+              },
+              {
+                el: 'Наличие поручней для опоры пациента.',
+              },
+              {
+                el: 'Возможно проведение тренировок стоя и сидя.',
+              },
+              {
+                el: 'Подключение к ПК по телеметрическому каналу.'
+              },
+              {
+                el: 'БОС- тренировки с набором увлекательных игр – «Мишень», «Траектория», «Сноуборд», «Кораблик», «Прогулка», «Квадрациклы», «Дельтаплан».',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        link: '/catalog/phiziotherapy/acsma',
+        img: (
+          <img
+            className="catalog__item-img ctgi"
+            src={acsmaLogo}
+            alt="сенатмед senatmed"
+          />
+        ),
+        antitle: 'АКСМА',
+        list: [
+          {
+            linkItem: '/catalog/phiziotherapy/acsma/prak',
+            img: (
+              <img
+                className="uzi__item-img"
+                src={prak1}
+                alt="senatmed сенатмед"
+              />
+            ),
+            model: 'ПРАК',
+            description: (
+              <>
+                <li className="uzi__description-item">
+                  30-минутный сеанс равен по эффективности 8-часовому сну
+                </li>
+                <li className="uzi__description-item">
+                  4 программы для разной степени психокоррекции: «Релаксация», «Медитация», «Устранение головной боли», «Сон»
+                </li>
+                <li className="uzi__description-item">
+                  Комплекс не требует специальных условий эксплуатации. Наиболее эффективен будет в затемненном помещении, без ярких деталей, с комфортной температурой (20-21°).
+                </li>
+              </>
+            ),
+            images: [
+              {
+                item: <img src={prak1} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={prak2} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={prak3} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={prak4} alt="senatmed Сенатмед" />,
+              },
+            ],
+            itemDesc: (
+              <>
+                ПРАК – программно-аппаратный резонансно-акустический реабилитационный комплекс
+                <br /><br />
+                Аппаратно-программный комплекс для коррекции психосоматического состояния человека с помощью запрограммированных резонансно-акустических колебаний сигналов ЭЭГ (программно-аппаратный резонансно-акустический реабилитационный комплекс – ПРАК; РУ № ФСР 2012/14162 от 06.12.2019 г.) предназначен для проведения групповой психосоматической коррекции методом свето-звуковой стимуляции мозга. 
+                <br /><br />
+                При стимуляции мозга звуковыми сигналами близкой частоты по разным каналам (наушники правый и левый) возникают акустические бинауральные биения или бинауральные ритмы в полости головного мозга. Частоты биений лежат в диапазоне ЭЭГ и ЭКГ сигналов. Создаваемая последовательность воздействующих сигналов звуковых частот и их сочетания производится с помощью персонального компьютера по специально разработанной программе.
+              </>
+            ),
+            price: 'цена по запросу',
+            pre: null,
+            tech: [
+              {
+                el: 'Кол-во программ для коррекции психосоматического состояния человека, не менее 4 шт.',
+              },
+              {
+                el: 'Кол-во видеоряда для светостимуляции, не менее 10 шт.',
+              },
+              {
+                el: 'Длительность программ коррекции, не менее 20 минут',
+              },
+              {
+                el: 'Шаг установки частоты, не менее 1 Гц',
+              },
+              {
+                el: 'Возможность регулировки напряжения выходных сигналов каждого канала в диапазоне, не уже 0 – 1 В',
+              },
+              {
+                el: 'Неравномерность амплитудно-частотной характеристики, не хуже +/-5 %',
+              },
+              {
+                el: 'Диагональ мониторов для светостимуляции (рекомендуемая), не менее 32 дюйма'
+              },
+              {
+                el: 'Питание от сети 220 ±22 В',
+              },
+              {
+                el: 'Ток потребления, не более 5 А',
               },
             ],
           },

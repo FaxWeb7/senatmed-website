@@ -8,12 +8,15 @@ import './scss/uziitem.scss'
 import './scss/rencatalog.scss'
 import pre0 from '../../../assets/catalog/rentgenologiya/gelpik/pre0.png';
 import ItemBg from "../../ui/ItemBg";
+import { AiFillCloseSquare } from 'react-icons/ai'
+import { useState } from "react";
 
 const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, vis, pre, price, ob, gallery, custom }) => {
   document.title = `${model} | Сенатмед`;
   document.querySelector('meta[name="description"]').content = `${model} ООО "Сенатмед"`;
   document.querySelector('meta[name="keywords"]').content = ` ${model}  медицина, сенатмед`
   window.scrollTo({ top: 0, behavior: 'auto' })
+  const [isModal, setIsModal] = useState('')
   const settings = {
     dots: true,
     arrows: false,
@@ -58,8 +61,9 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
               <div className="slider-wrapper">
                 <Slider {...settings} className="uzi-item-slider">
                   {images.map(({item}, index) => {
+                    console.log(item.props.src)
                     return(
-                      <li className="uzi-item-slider-item"  key={index}>{item}</li>
+                      <li className="uzi-item-slider-item" onClick={() => setIsModal(item.props.src)} key={index}>{item}</li>
                     )
                   })}
                 </Slider>
@@ -206,6 +210,13 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
         </div>
       </div>
     </section>
+    {isModal && (
+        <div className="modal">
+          <AiFillCloseSquare color="white" className="modal__btn" onClick={() => setIsModal('')} />
+          {/* <btn className="modal-btn" onClick={() => setIsModal('')} /> */}
+          <img className="modal__img" src={isModal} alt='img' />
+        </div>
+      )}
     </>
   )
 }

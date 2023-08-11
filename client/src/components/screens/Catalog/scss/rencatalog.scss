@@ -135,3 +135,33 @@
     }
   }
 }
+
+.modal{
+  z-index: 12;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(43,41,96,0.88);
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+  &__img{
+    height: auto;
+    max-height: 80%;
+    max-width: 97%;
+    border-radius: 10px;
+    margin-bottom: auto;
+    background-color: white;
+  }
+  &__btn{
+    width: 40px;
+    height: 40px;
+    align-self: flex-end;
+    margin-top: 15px;
+    margin-right: 15px;
+    cursor: pointer;
+    margin-bottom: auto;
+  }
+}
