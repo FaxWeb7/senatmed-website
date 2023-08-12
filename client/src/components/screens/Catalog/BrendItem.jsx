@@ -213,7 +213,6 @@ const BrendItem = ({ images, model, subtitleItem, itemDesc, oss, slider, tech, v
     {isModal && (
         <div className="modal">
           <AiFillCloseSquare color="white" className="modal__btn" onClick={() => setIsModal('')} />
-          {/* <btn className="modal-btn" onClick={() => setIsModal('')} /> */}
           <img className="modal__img" src={isModal} alt='img' />
         </div>
       )}
