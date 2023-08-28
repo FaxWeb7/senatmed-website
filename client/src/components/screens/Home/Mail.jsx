@@ -57,6 +57,18 @@ const Mail = () => {
                   <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586l-1.239-.757Zm3.436-.586L16 11.801V4.697l-5.803 3.546Z"/>
                 </svg>
                 senatmed.info@yandex.ru</a>
+                {/* <h3 className="mail__location-item" style={{marginTop: 25,  flexDirection: 'column', alignItems: 'start'}}>
+                  <h5 style={{fontSize: 17, fontWeight: 600}}>Полное наименование предприятия</h5>
+                  <h5 style={{fontSize: 14, fontWeight: 600}}>-- Общество с ограниченной ответственностью «СЕНАТМЕД» </h5>
+                </h3>
+                <h3 className="mail__location-item" style={{marginTop: 10,  flexDirection: 'column', alignItems: 'start'}}>
+                  <h5 style={{fontSize: 17, fontWeight: 600}}>Юридический и почтовый адрес</h5>
+                  <h5 style={{fontSize: 14, fontWeight: 600}}>-- 108811, г. Москва, г. Московский, ул. Солнечная, д. 3 А, стр. 1, ком. 16</h5>
+                </h3>
+                <h3 className="mail__location-item">
+                  <h5 style={{fontSize: 17, fontWeight: 600}}>ИНН</h5>
+                  7751163033
+                </h3> */}
               </div>
             </div>
             <div className="mail__form" id="mail">
