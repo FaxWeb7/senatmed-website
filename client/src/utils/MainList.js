@@ -521,6 +521,15 @@ import pg1 from '../assets/catalog/phiz/elamed/pg1.jpeg'
 import pg2 from '../assets/catalog/phiz/elamed/pg2.png'
 import pg3 from '../assets/catalog/phiz/elamed/pg3.jpeg'
 import pg4 from '../assets/catalog/phiz/elamed/pg4.jpeg'
+import bnp1 from '../assets/catalog/phiz/cosyma/bnp1.jpeg'
+import bnp2 from '../assets/catalog/phiz/cosyma/bnp2.jpeg'
+import stds1 from '../assets/catalog/phiz/neurosoft/stds1.png'
+import stds2 from '../assets/catalog/phiz/neurosoft/stds2.png'
+import stds3 from '../assets/catalog/phiz/neurosoft/stds3.jpeg'
+import mintlogo from '../assets/catalog/phiz/mint/logo.png'
+import bttr1 from '../assets/catalog/phiz/mint/bttr1.png'
+import glrh1 from '../assets/catalog/phiz/mint/glrh1.jpeg'
+import glrh2 from '../assets/catalog/phiz/mint/glrh2.jpeg'
 
 
 export const MainList = [
@@ -5255,7 +5264,7 @@ export const MainList = [
         antitle: 'Косима',
         list: [
           {
-            linkItem: '/catalog/phiziotherapy/ortorent/neostim-3',
+            linkItem: '/catalog/phiziotherapy/cosyma/neostim-3',
             img: (
               <img
                 className="uzi__item-img"
@@ -5316,7 +5325,7 @@ export const MainList = [
             ],
           },
           {
-            linkItem: '/catalog/phiziotherapy/ortorent/neostim-16',
+            linkItem: '/catalog/phiziotherapy/cosyma/neostim-16',
             img: (
               <img
                 className="uzi__item-img"
@@ -5377,7 +5386,7 @@ export const MainList = [
             ],
           },
           {
-            linkItem: '/catalog/phiziotherapy/ortorent/biokin',
+            linkItem: '/catalog/phiziotherapy/cosyma/biokin',
             img: (
               <img
                 className="uzi__item-img"
@@ -5482,6 +5491,64 @@ export const MainList = [
               },
               {
                 el: 'масса: 300 кг.',
+              },
+            ],
+          },
+          {
+            linkItem: '/catalog/phiziotherapy/cosyma/backprotez',
+            img: (
+              <img
+                className="uzi__item-img"
+                src={bnp1}
+                alt="senatmed сенатмед"
+              />
+            ),
+            model: 'Спинальный нейропротез',
+            description: (
+              <>
+                <li className="uzi__description-item">
+                Портативное устройство для самостоятельной ходьбы пациентов, парализованных после инсульта
+                </li>
+              </>
+            ),
+            images: [
+              {
+                item: <img src={bnp2} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={bnp1} alt="senatmed Сенатмед" />,
+              },
+            ],
+            itemDesc: (
+              <>
+                Портативное устройство для самостоятельной ходьбы пациентов, парализованных после инсульта
+                <br />
+                <br />
+                <b>Принцип работы:</b>
+                <br /> Движение происходит не за счёт искусственных ортезов, а за счёт собственных мышц больного, усиленных многоуровневой неинвазивной стимуляцией спинного мозга. Электродная матрица позволяет стимулировать не только сам спинной мозг, но и корешки спинного мозга прерывистыми импульсами на фоне стимуляции шейного отдела постоянным током
+                <br />
+                <br />
+                <b>Сфера применения:</b>
+                <br />
+                Частные лица с целью домашней реабилитации, клиники, реабилитационные центры
+              </>
+            ),
+            pre: null,
+            tech: [
+              {
+                el: 'возможность восстановления двигательных функций у парализованных больны',
+              },
+              {
+                el: 'уменьшение спастики и улучшение координации ходьбы',
+              },
+              {
+                el: 'лёгкое портативное устройство',
+              },
+              {
+                el: 'нейрореабилитация + реальная ходьба',
+              },
+              {
+                el: 'в разы дешевле экзоскелетов',
               },
             ],
           },
@@ -7227,6 +7294,68 @@ export const MainList = [
             ],
             tech: null,
           },
+          {
+            linkItem: '/catalog/phiziotherapy/neurosoft/stedis',
+            img: (
+              <img
+                className="uzi__item-img"
+                src={stds1}
+                alt="senatmed сенатмед"
+              />
+            ),
+            model: 'Стэдис-Кинематика',
+            description: (
+              <>
+                <li className="uzi__description-item">
+                объективный анализ и тренировка координации и движений в суставах и позвоночнике
+                </li>
+                <li className="uzi__description-item">
+                возможность раннего начала реабилитационного процесса
+                </li>
+                <li className="uzi__description-item">
+                режим автоматического управления сложностью тренировки
+                </li>
+                <li className="uzi__description-item">
+                система входит в стандарт оснащения отделений медицинской реабилитации по приказу №788н
+                </li>
+              </>
+            ),
+            images: [
+              {
+                item: <img src={stds1} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={stds2} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={stds3} alt="senatmed Сенатмед" />,
+              },
+            ],
+            itemDesc: (
+              <>
+                <b>«Стэдис-Кинематика» — это уникальная система, позволяющая проводить:</b><br /><br/>—— объективный анализ координации и движения в суставах для определения тактики реабилитационного процесса и дальнейшего контроля динамики восстановления;<br />—— тренировку двигательной активности суставов или позвоночника с биологической обратной связью (БОС);<br />—— оценку динамики восстановления в процессе реабилитации и после ее завершения.<br /><br/>С системой «Стэдис-Кинематика» реабилитация двигательных функций становится целенаправленной и объективной.
+              </>
+            ),
+            price: 'цена по запросу',
+            pre: null,
+            tech: [
+              {
+                el: 'Инерциальные сенсоры: регистрация параметров движения и ЭМГ в реальном времени' 
+              },
+              {
+                el: 'Комплексный подход: оценка + целенаправленное восстановление двигательных функций' 
+              },
+              {
+                el: 'Оценка и восстановление функции ходьбы, постуральной функции, движений в суставах' 
+              },
+              {
+                el: 'Автоматический режим тренировки' 
+              },
+              {
+                el: 'Единый интерфейс программного обеспечения' 
+              },
+            ],
+          },
         ],
       },
       {
@@ -7307,6 +7436,148 @@ export const MainList = [
               },
               {
                 el: 'Широкий выбор излучателей для проведения терапии',
+              },
+            ],
+          },
+        ],
+      },
+      {
+        link: '/catalog/phiziotherapy/mint',
+        img: (
+          <img
+            className="catalog__item-img ctgi"
+            src={mintlogo}
+            alt="сенатмед senatmed"
+          />
+        ),
+        antitle: 'Медицина и новые технологии',
+        list: [
+          {
+            linkItem: '/catalog/phiziotherapy/mint/bttr',
+            img: (
+              <img
+                className="uzi__item-img"
+                src={bttr1}
+                alt="senatmed сенатмед"
+              />
+            ),
+            model: 'BalanceTutor',
+            description: (
+              <>
+                <li className="uzi__description-item">
+                Реабилитация пациентов с нейромышечными заболеваниями
+                </li>
+                <li className="uzi__description-item">
+                Реабилитация пациентов с заболеваниями опорно-двигательного аппарата
+                </li>
+                <li className="uzi__description-item">
+                Реабилитация пациентов пожилого возраста
+                </li>
+                <li className="uzi__description-item">
+                Реабилитация спортсменов
+                </li>
+                <li className="uzi__description-item">
+                Восстановление функций вестибулярного аппарата
+                </li>
+              </>
+            ),
+            images: [
+              {
+                item: <img src={bttr1} alt="senatmed Сенатмед" />,
+              },
+            ],
+            itemDesc: (
+              <>
+                BalanceTutor - система восстановления статического и динамического равновесия, состоящая из встроенной в подвижную силовую платформу беговой дорожки, создающей искусственные дестабилизирующие воздействия для тренировки постурального контроля и равновесия. <br /><br />Платформа может перемещаться в горизонтальной плоскости вперед/назад и вправо/влево, тем самым имитируя нарушение равновесия как в положении стоя, так и при ходьбе (беге).
+              </>
+            ),
+            price: 'цена по запросу',
+            pre: [
+              {
+                title: 'Комплексное оснащение',
+                text: 'Подборка реабилитационного оборудования по стандартам оснащения'
+              },
+              {
+                title: 'Апробация',
+                text: 'Испытание оборудования в условиях Вашего медучреждения'
+              },
+              {
+                title: 'Сервисное обслуживание',
+                text: 'Поставка медицинского оборудования с гарантийным и постгарантийным обслуживанием'
+              },
+              {
+                title: 'Обучение',
+                text: 'Проведение бесплатных вэбинаров и консультаций'
+              },
+            ],
+            tech: null,
+          },
+          {
+            linkItem: '/catalog/phiziotherapy/mint/glr',
+            img: (
+              <img
+                className="uzi__item-img"
+                src={glrh1}
+                alt="senatmed сенатмед"
+              />
+            ),
+            model: 'Система Gloreha',
+            description: (
+              <>
+                <li className="uzi__description-item">
+                Одновременный просмотр 3D изображения, симулирующего текущее движение позволяет пациентам:более точно выполнять упражнение
+                </li>
+                <li className="uzi__description-item">
+                развивает восприятие собственного тела, чувство принадлежности руки к телу, и осознание движения
+                </li>
+                <li className="uzi__description-item">
+                осуществляет функциональную афферентацию и идеомоторное программирование.
+                </li>
+              </>
+            ),
+            images: [
+              {
+                item: <img src={glrh1} alt="senatmed Сенатмед" />,
+              },
+              {
+                item: <img src={glrh2} alt="senatmed Сенатмед" />,
+              },
+            ],
+            itemDesc: (
+              <>
+                Gloreha – роботизированный комплекс для реабилитации пациентов с нарушением двигательной функции кисти. Он дает возможность интенсивного, стимулирующего, многоцелевого лечения на ранней стадии. Во время выполнения пациентом упражнений движения руки сопровождаются видео и аудио эффектами, что стимулирует нейро-когнитивное восстановление. Аппарат идеально подходит для всех фаз восстановления, как для пациентов с полностью парализованной рукой, так и для пациентов с вялыми и спастическими парезами.
+              </>
+            ),
+            price: 'цена по запросу',
+            pre: [
+              {
+                title: 'Комплексное оснащение',
+                text: 'Подборка реабилитационного оборудования по стандартам оснащения'
+              },
+              {
+                title: 'Апробация',
+                text: 'Испытание оборудования в условиях Вашего медучреждения'
+              },
+              {
+                title: 'Сервисное обслуживание',
+                text: 'Поставка медицинского оборудования с гарантийным и постгарантийным обслуживанием'
+              },
+            ],
+            tech: [
+              {
+                el: 'Двусторонняя тренировка '
+              },
+              {
+                el: 'Мобилизация с активной поддержкой '
+              },
+              {
+                el: 'Интерактивные игры'
+              },
+              {
+                el: 'Функциональные упражнения'
+              },
+              {
+                el: 'Динамическая поддержка'
               },
             ],
           },
