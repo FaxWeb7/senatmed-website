@@ -22,7 +22,7 @@
   },
   "scripts": {
     "start": "PORT=443 react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build"
   },
   "secure": true,
   "eslintConfig": {
