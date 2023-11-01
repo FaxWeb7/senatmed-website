@@ -1,5 +1,2 @@
 node_modules
-client/node_modules
-server/node_modules
-server/.env
-client/src/constants.js
+src/constants.js
