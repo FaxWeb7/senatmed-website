@@ -16,7 +16,7 @@ const Mail = () => {
       formBody.push(encodedKey + "=" + encodedValue);
     }
     formBody = formBody.join("&");
-    fetch(`${SERVER_URL}/api/sendmail`, {
+    fetch(`${SERVER_URL}/api/mail/send-mail`, {
       method: "POST",
       body: formBody,
       headers: {
