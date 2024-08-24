@@ -1,0 +1,10 @@
+{
+  "name": "senatmed-website",
+  "scripts": {
+    "build": "npm install && (cd frontend && npm install && npm run build) && (cd backend && npm install && npm run build)",
+    "start": "(cd backend && pm2 start \"npm run start\" --name backend) && sudo nginx -t && sudo service nginx restart"
+  },
+  "dependencies": {
+    "pm2": "^5.4.2"
+  }
+}
